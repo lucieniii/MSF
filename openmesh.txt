@@ -1,0 +1,1056 @@
+Help on TriMesh in module openmesh object:
+
+class TriMesh(pybind11_builtins.pybind11_object)
+ |  Method resolution order:
+ |      TriMesh
+ |      pybind11_builtins.pybind11_object
+ |      builtins.object
+ |  
+ |  Methods defined here:
+ |  
+ |  __copy__(...)
+ |      __copy__(self: openmesh.TriMesh) -> object
+ |  
+ |  __deepcopy__(...)
+ |      __deepcopy__(self: openmesh.TriMesh, arg0: dict) -> object
+ |  
+ |  __init__(...)
+ |      __init__(*args, **kwargs)
+ |      Overloaded function.
+ |      
+ |      1. __init__(self: openmesh.TriMesh) -> None
+ |      
+ |      2. __init__(self: openmesh.TriMesh, points: numpy.ndarray[numpy.float64], face_vertex_indices: numpy.ndarray[numpy.int32] = array([], dtype=int32)) -> None
+ |  
+ |  add_face(...)
+ |      add_face(*args, **kwargs)
+ |      Overloaded function.
+ |      
+ |      1. add_face(self: openmesh.TriMesh, arg0: openmesh.VertexHandle, arg1: openmesh.VertexHandle, arg2: openmesh.VertexHandle) -> openmesh.FaceHandle
+ |      
+ |      2. add_face(self: openmesh.TriMesh, arg0: List[openmesh.VertexHandle]) -> openmesh.FaceHandle
+ |  
+ |  add_faces(...)
+ |      add_faces(self: openmesh.TriMesh, face_vertex_indices: numpy.ndarray[numpy.int32]) -> None
+ |  
+ |  add_vertex(...)
+ |      add_vertex(self: openmesh.TriMesh, arg0: numpy.ndarray[numpy.float64]) -> openmesh.VertexHandle
+ |  
+ |  add_vertices(...)
+ |      add_vertices(self: openmesh.TriMesh, points: numpy.ndarray[numpy.float64]) -> None
+ |  
+ |  adjust_outgoing_halfedge(...)
+ |      adjust_outgoing_halfedge(self: openmesh.TriMesh, arg0: openmesh.VertexHandle) -> None
+ |  
+ |  assign_connectivity(...)
+ |      assign_connectivity(*args, **kwargs)
+ |      Overloaded function.
+ |      
+ |      1. assign_connectivity(self: openmesh.TriMesh, arg0: openmesh.PolyMesh) -> None
+ |      
+ |      2. assign_connectivity(self: openmesh.TriMesh, arg0: openmesh.TriMesh) -> None
+ |  
+ |  calc_dihedral_angle(...)
+ |      calc_dihedral_angle(*args, **kwargs)
+ |      Overloaded function.
+ |      
+ |      1. calc_dihedral_angle(self: openmesh.TriMesh, arg0: openmesh.HalfedgeHandle) -> float
+ |      
+ |      2. calc_dihedral_angle(self: openmesh.TriMesh, arg0: openmesh.EdgeHandle) -> float
+ |  
+ |  calc_dihedral_angle_fast(...)
+ |      calc_dihedral_angle_fast(*args, **kwargs)
+ |      Overloaded function.
+ |      
+ |      1. calc_dihedral_angle_fast(self: openmesh.TriMesh, arg0: openmesh.HalfedgeHandle) -> float
+ |      
+ |      2. calc_dihedral_angle_fast(self: openmesh.TriMesh, arg0: openmesh.EdgeHandle) -> float
+ |  
+ |  calc_edge_length(...)
+ |      calc_edge_length(*args, **kwargs)
+ |      Overloaded function.
+ |      
+ |      1. calc_edge_length(self: openmesh.TriMesh, arg0: openmesh.EdgeHandle) -> float
+ |      
+ |      2. calc_edge_length(self: openmesh.TriMesh, arg0: openmesh.HalfedgeHandle) -> float
+ |  
+ |  calc_edge_sqr_length(...)
+ |      calc_edge_sqr_length(*args, **kwargs)
+ |      Overloaded function.
+ |      
+ |      1. calc_edge_sqr_length(self: openmesh.TriMesh, arg0: openmesh.EdgeHandle) -> float
+ |      
+ |      2. calc_edge_sqr_length(self: openmesh.TriMesh, arg0: openmesh.HalfedgeHandle) -> float
+ |  
+ |  calc_edge_vector(...)
+ |      calc_edge_vector(*args, **kwargs)
+ |      Overloaded function.
+ |      
+ |      1. calc_edge_vector(self: openmesh.TriMesh, arg0: openmesh.EdgeHandle) -> numpy.ndarray[numpy.float64]
+ |      
+ |      2. calc_edge_vector(self: openmesh.TriMesh, arg0: openmesh.HalfedgeHandle) -> numpy.ndarray[numpy.float64]
+ |  
+ |  calc_face_centroid(...)
+ |      calc_face_centroid(self: openmesh.TriMesh, arg0: openmesh.FaceHandle) -> numpy.ndarray[numpy.float64]
+ |  
+ |  calc_face_normal(...)
+ |      calc_face_normal(self: openmesh.TriMesh, arg0: openmesh.FaceHandle) -> numpy.ndarray[numpy.float64]
+ |  
+ |  calc_halfedge_normal(...)
+ |      calc_halfedge_normal(self: openmesh.TriMesh, heh: openmesh.HalfedgeHandle, feature_angle: float = 0.8) -> numpy.ndarray[numpy.float64]
+ |  
+ |  calc_sector_angle(...)
+ |      calc_sector_angle(self: openmesh.TriMesh, arg0: openmesh.HalfedgeHandle) -> float
+ |  
+ |  calc_sector_area(...)
+ |      calc_sector_area(self: openmesh.TriMesh, arg0: openmesh.HalfedgeHandle) -> float
+ |  
+ |  calc_sector_normal(...)
+ |      calc_sector_normal(self: openmesh.TriMesh, arg0: openmesh.HalfedgeHandle) -> numpy.ndarray[numpy.float64]
+ |  
+ |  calc_sector_vectors(...)
+ |      calc_sector_vectors(self: openmesh.TriMesh, arg0: openmesh.HalfedgeHandle) -> Tuple[numpy.ndarray[numpy.float64], numpy.ndarray[numpy.float64]]
+ |  
+ |  calc_vertex_normal(...)
+ |      calc_vertex_normal(self: openmesh.TriMesh, arg0: openmesh.VertexHandle) -> numpy.ndarray[numpy.float64]
+ |  
+ |  calc_vertex_normal_correct(...)
+ |      calc_vertex_normal_correct(self: openmesh.TriMesh, arg0: openmesh.VertexHandle) -> numpy.ndarray[numpy.float64]
+ |  
+ |  calc_vertex_normal_fast(...)
+ |      calc_vertex_normal_fast(self: openmesh.TriMesh, arg0: openmesh.VertexHandle) -> numpy.ndarray[numpy.float64]
+ |  
+ |  calc_vertex_normal_loop(...)
+ |      calc_vertex_normal_loop(self: openmesh.TriMesh, arg0: openmesh.VertexHandle) -> numpy.ndarray[numpy.float64]
+ |  
+ |  ccw_rotated_halfedge_handle(...)
+ |      ccw_rotated_halfedge_handle(self: openmesh.TriMesh, arg0: openmesh.HalfedgeHandle) -> openmesh.HalfedgeHandle
+ |  
+ |  clean(...)
+ |      clean(self: openmesh.TriMesh) -> None
+ |  
+ |  clear(...)
+ |      clear(self: openmesh.TriMesh) -> None
+ |  
+ |  collapse(...)
+ |      collapse(self: openmesh.TriMesh, arg0: openmesh.HalfedgeHandle) -> None
+ |  
+ |  color(...)
+ |      color(*args, **kwargs)
+ |      Overloaded function.
+ |      
+ |      1. color(self: openmesh.TriMesh, arg0: openmesh.VertexHandle) -> numpy.ndarray[numpy.float32]
+ |      
+ |      2. color(self: openmesh.TriMesh, arg0: openmesh.HalfedgeHandle) -> numpy.ndarray[numpy.float32]
+ |      
+ |      3. color(self: openmesh.TriMesh, arg0: openmesh.EdgeHandle) -> numpy.ndarray[numpy.float32]
+ |      
+ |      4. color(self: openmesh.TriMesh, arg0: openmesh.FaceHandle) -> numpy.ndarray[numpy.float32]
+ |  
+ |  copy_all_properties(...)
+ |      copy_all_properties(*args, **kwargs)
+ |      Overloaded function.
+ |      
+ |      1. copy_all_properties(self: openmesh.TriMesh, vh_from: openmesh.VertexHandle, vh_to: openmesh.VertexHandle, copy_build_in: bool = False) -> None
+ |      
+ |      2. copy_all_properties(self: openmesh.TriMesh, hh_from: openmesh.HalfedgeHandle, hh_to: openmesh.HalfedgeHandle, copy_build_in: bool = False) -> None
+ |      
+ |      3. copy_all_properties(self: openmesh.TriMesh, eh_from: openmesh.EdgeHandle, eh_to: openmesh.EdgeHandle, copy_build_in: bool = False) -> None
+ |      
+ |      4. copy_all_properties(self: openmesh.TriMesh, fh_from: openmesh.FaceHandle, fh_to: openmesh.FaceHandle, copy_build_in: bool = False) -> None
+ |  
+ |  copy_property(...)
+ |      copy_property(*args, **kwargs)
+ |      Overloaded function.
+ |      
+ |      1. copy_property(self: openmesh.TriMesh, arg0: str, arg1: openmesh.VertexHandle, arg2: openmesh.VertexHandle) -> None
+ |      
+ |      2. copy_property(self: openmesh.TriMesh, arg0: str, arg1: openmesh.HalfedgeHandle, arg2: openmesh.HalfedgeHandle) -> None
+ |      
+ |      3. copy_property(self: openmesh.TriMesh, arg0: str, arg1: openmesh.EdgeHandle, arg2: openmesh.EdgeHandle) -> None
+ |      
+ |      4. copy_property(self: openmesh.TriMesh, arg0: str, arg1: openmesh.FaceHandle, arg2: openmesh.FaceHandle) -> None
+ |  
+ |  cw_rotated_halfedge_handle(...)
+ |      cw_rotated_halfedge_handle(self: openmesh.TriMesh, arg0: openmesh.HalfedgeHandle) -> openmesh.HalfedgeHandle
+ |  
+ |  delete_edge(...)
+ |      delete_edge(self: openmesh.TriMesh, eh: openmesh.EdgeHandle, delete_isolated_vertices: bool = True) -> None
+ |  
+ |  delete_face(...)
+ |      delete_face(self: openmesh.TriMesh, fh: openmesh.FaceHandle, delete_isolated_vertices: bool = True) -> None
+ |  
+ |  delete_isolated_vertices(...)
+ |      delete_isolated_vertices(self: openmesh.TriMesh) -> None
+ |  
+ |  delete_vertex(...)
+ |      delete_vertex(self: openmesh.TriMesh, vh: openmesh.VertexHandle, delete_isolated_vertices: bool = True) -> None
+ |  
+ |  edge_colors(...)
+ |      edge_colors(self: openmesh.TriMesh) -> numpy.ndarray[numpy.float32]
+ |  
+ |  edge_face_indices(...)
+ |      edge_face_indices(self: openmesh.TriMesh) -> numpy.ndarray[numpy.int32]
+ |  
+ |  edge_halfedge_indices(...)
+ |      edge_halfedge_indices(self: openmesh.TriMesh) -> numpy.ndarray[numpy.int32]
+ |  
+ |  edge_handle(...)
+ |      edge_handle(*args, **kwargs)
+ |      Overloaded function.
+ |      
+ |      1. edge_handle(self: openmesh.TriMesh, arg0: int) -> openmesh.EdgeHandle
+ |      
+ |      2. edge_handle(self: openmesh.TriMesh, arg0: openmesh.HalfedgeHandle) -> openmesh.EdgeHandle
+ |  
+ |  edge_property(...)
+ |      edge_property(*args, **kwargs)
+ |      Overloaded function.
+ |      
+ |      1. edge_property(self: openmesh.TriMesh, arg0: str, arg1: openmesh.EdgeHandle) -> object
+ |      
+ |      2. edge_property(self: openmesh.TriMesh, arg0: str) -> list
+ |  
+ |  edge_property_array(...)
+ |      edge_property_array(self: openmesh.TriMesh, arg0: str) -> numpy.ndarray[numpy.float64]
+ |  
+ |  edge_vertex_indices(...)
+ |      edge_vertex_indices(self: openmesh.TriMesh) -> numpy.ndarray[numpy.int32]
+ |  
+ |  edges(...)
+ |      edges(self: openmesh.TriMesh) -> IteratorWrapperT<OpenMesh::Iterators::GenericIteratorT<OpenMesh::PolyConnectivity, OpenMesh::EdgeHandle, OpenMesh::ArrayKernel, &(OpenMesh::ArrayKernel::has_edge_status() const), &(OpenMesh::ArrayKernel::n_edges() const)>, &(OpenMesh::ArrayKernel::n_edges() const)>
+ |  
+ |  edges_empty(...)
+ |      edges_empty(self: openmesh.TriMesh) -> bool
+ |  
+ |  ef_indices(...)
+ |      ef_indices(self: openmesh.TriMesh) -> numpy.ndarray[numpy.int32]
+ |  
+ |  eh_indices(...)
+ |      eh_indices(self: openmesh.TriMesh) -> numpy.ndarray[numpy.int32]
+ |  
+ |  ev_indices(...)
+ |      ev_indices(self: openmesh.TriMesh) -> numpy.ndarray[numpy.int32]
+ |  
+ |  face_colors(...)
+ |      face_colors(self: openmesh.TriMesh) -> numpy.ndarray[numpy.float32]
+ |  
+ |  face_edge_indices(...)
+ |      face_edge_indices(self: openmesh.TriMesh) -> numpy.ndarray[numpy.int32]
+ |  
+ |  face_face_indices(...)
+ |      face_face_indices(self: openmesh.TriMesh) -> numpy.ndarray[numpy.int32]
+ |  
+ |  face_halfedge_indices(...)
+ |      face_halfedge_indices(self: openmesh.TriMesh) -> numpy.ndarray[numpy.int32]
+ |  
+ |  face_handle(...)
+ |      face_handle(*args, **kwargs)
+ |      Overloaded function.
+ |      
+ |      1. face_handle(self: openmesh.TriMesh, arg0: int) -> openmesh.FaceHandle
+ |      
+ |      2. face_handle(self: openmesh.TriMesh, arg0: openmesh.HalfedgeHandle) -> openmesh.FaceHandle
+ |  
+ |  face_normals(...)
+ |      face_normals(self: openmesh.TriMesh) -> numpy.ndarray[numpy.float64]
+ |  
+ |  face_property(...)
+ |      face_property(*args, **kwargs)
+ |      Overloaded function.
+ |      
+ |      1. face_property(self: openmesh.TriMesh, arg0: str, arg1: openmesh.FaceHandle) -> object
+ |      
+ |      2. face_property(self: openmesh.TriMesh, arg0: str) -> list
+ |  
+ |  face_property_array(...)
+ |      face_property_array(self: openmesh.TriMesh, arg0: str) -> numpy.ndarray[numpy.float64]
+ |  
+ |  face_vertex_indices(...)
+ |      face_vertex_indices(self: openmesh.TriMesh) -> numpy.ndarray[numpy.int32]
+ |  
+ |  faces(...)
+ |      faces(self: openmesh.TriMesh) -> IteratorWrapperT<OpenMesh::Iterators::GenericIteratorT<OpenMesh::PolyConnectivity, OpenMesh::FaceHandle, OpenMesh::ArrayKernel, &(OpenMesh::ArrayKernel::has_face_status() const), &(OpenMesh::ArrayKernel::n_faces() const)>, &(OpenMesh::ArrayKernel::n_faces() const)>
+ |  
+ |  faces_empty(...)
+ |      faces_empty(self: openmesh.TriMesh) -> bool
+ |  
+ |  fe(...)
+ |      fe(self: openmesh.TriMesh, arg0: openmesh.FaceHandle) -> CirculatorWrapperT<OpenMesh::Iterators::GenericCirculatorT_DEPRECATED<OpenMesh::PolyConnectivity::FaceEdgeTraits>, OpenMesh::FaceHandle>
+ |  
+ |  fe_indices(...)
+ |      fe_indices(self: openmesh.TriMesh) -> numpy.ndarray[numpy.int32]
+ |  
+ |  feature(...)
+ |      feature(*args, **kwargs)
+ |      Overloaded function.
+ |      
+ |      1. feature(self: openmesh.TriMesh, arg0: openmesh.EdgeHandle) -> bool
+ |      
+ |      2. feature(self: openmesh.TriMesh, arg0: openmesh.VertexHandle) -> bool
+ |  
+ |  ff(...)
+ |      ff(self: openmesh.TriMesh, arg0: openmesh.FaceHandle) -> CirculatorWrapperT<OpenMesh::Iterators::GenericCirculatorT_DEPRECATED<OpenMesh::PolyConnectivity::FaceFaceTraits>, OpenMesh::FaceHandle>
+ |  
+ |  ff_indices(...)
+ |      ff_indices(self: openmesh.TriMesh) -> numpy.ndarray[numpy.int32]
+ |  
+ |  fh(...)
+ |      fh(self: openmesh.TriMesh, arg0: openmesh.FaceHandle) -> CirculatorWrapperT<OpenMesh::Iterators::GenericCirculatorT_DEPRECATED<OpenMesh::PolyConnectivity::FaceHalfedgeTraits>, OpenMesh::FaceHandle>
+ |  
+ |  fh_indices(...)
+ |      fh_indices(self: openmesh.TriMesh) -> numpy.ndarray[numpy.int32]
+ |  
+ |  find_feature_edges(...)
+ |      find_feature_edges(self: openmesh.TriMesh, angle_tresh: float = 0.767944870877505) -> int
+ |  
+ |  find_halfedge(...)
+ |      find_halfedge(self: openmesh.TriMesh, arg0: openmesh.VertexHandle, arg1: openmesh.VertexHandle) -> openmesh.HalfedgeHandle
+ |  
+ |  flip(...)
+ |      flip(self: openmesh.TriMesh, arg0: openmesh.EdgeHandle) -> None
+ |  
+ |  from_vertex_handle(...)
+ |      from_vertex_handle(self: openmesh.TriMesh, arg0: openmesh.HalfedgeHandle) -> openmesh.VertexHandle
+ |  
+ |  fv(...)
+ |      fv(self: openmesh.TriMesh, arg0: openmesh.FaceHandle) -> CirculatorWrapperT<OpenMesh::Iterators::GenericCirculatorT_DEPRECATED<OpenMesh::PolyConnectivity::FaceVertexTraits>, OpenMesh::FaceHandle>
+ |  
+ |  fv_indices(...)
+ |      fv_indices(self: openmesh.TriMesh) -> numpy.ndarray[numpy.int32]
+ |  
+ |  garbage_collection(...)
+ |      garbage_collection(*args, **kwargs)
+ |      Overloaded function.
+ |      
+ |      1. garbage_collection(self: openmesh.TriMesh, v: bool = True, e: bool = True, f: bool = True) -> None
+ |      
+ |      2. garbage_collection(self: openmesh.TriMesh, vh_to_update: list, hh_to_update: list, fh_to_update: list, v: bool = True, e: bool = True, f: bool = True) -> None
+ |  
+ |  halfedge_colors(...)
+ |      halfedge_colors(self: openmesh.TriMesh) -> numpy.ndarray[numpy.float32]
+ |  
+ |  halfedge_edge_indices(...)
+ |      halfedge_edge_indices(self: openmesh.TriMesh) -> numpy.ndarray[numpy.int32]
+ |  
+ |  halfedge_face_indices(...)
+ |      halfedge_face_indices(self: openmesh.TriMesh) -> numpy.ndarray[numpy.int32]
+ |  
+ |  halfedge_from_vertex_indices(...)
+ |      halfedge_from_vertex_indices(self: openmesh.TriMesh) -> numpy.ndarray[numpy.int32]
+ |  
+ |  halfedge_handle(...)
+ |      halfedge_handle(*args, **kwargs)
+ |      Overloaded function.
+ |      
+ |      1. halfedge_handle(self: openmesh.TriMesh, arg0: int) -> openmesh.HalfedgeHandle
+ |      
+ |      2. halfedge_handle(self: openmesh.TriMesh, arg0: openmesh.VertexHandle) -> openmesh.HalfedgeHandle
+ |      
+ |      3. halfedge_handle(self: openmesh.TriMesh, arg0: openmesh.EdgeHandle, arg1: int) -> openmesh.HalfedgeHandle
+ |      
+ |      4. halfedge_handle(self: openmesh.TriMesh, arg0: openmesh.FaceHandle) -> openmesh.HalfedgeHandle
+ |  
+ |  halfedge_normals(...)
+ |      halfedge_normals(self: openmesh.TriMesh) -> numpy.ndarray[numpy.float64]
+ |  
+ |  halfedge_property(...)
+ |      halfedge_property(*args, **kwargs)
+ |      Overloaded function.
+ |      
+ |      1. halfedge_property(self: openmesh.TriMesh, arg0: str, arg1: openmesh.HalfedgeHandle) -> object
+ |      
+ |      2. halfedge_property(self: openmesh.TriMesh, arg0: str) -> list
+ |  
+ |  halfedge_property_array(...)
+ |      halfedge_property_array(self: openmesh.TriMesh, arg0: str) -> numpy.ndarray[numpy.float64]
+ |  
+ |  halfedge_texcoords1D(...)
+ |      halfedge_texcoords1D(self: openmesh.TriMesh) -> numpy.ndarray[numpy.float64]
+ |  
+ |  halfedge_texcoords2D(...)
+ |      halfedge_texcoords2D(self: openmesh.TriMesh) -> numpy.ndarray[numpy.float64]
+ |  
+ |  halfedge_texcoords3D(...)
+ |      halfedge_texcoords3D(self: openmesh.TriMesh) -> numpy.ndarray[numpy.float64]
+ |  
+ |  halfedge_to_vertex_indices(...)
+ |      halfedge_to_vertex_indices(self: openmesh.TriMesh) -> numpy.ndarray[numpy.int32]
+ |  
+ |  halfedge_vertex_indices(...)
+ |      halfedge_vertex_indices(self: openmesh.TriMesh) -> numpy.ndarray[numpy.int32]
+ |  
+ |  halfedges(...)
+ |      halfedges(self: openmesh.TriMesh) -> IteratorWrapperT<OpenMesh::Iterators::GenericIteratorT<OpenMesh::PolyConnectivity, OpenMesh::HalfedgeHandle, OpenMesh::ArrayKernel, &(OpenMesh::ArrayKernel::has_halfedge_status() const), &(OpenMesh::ArrayKernel::n_halfedges() const)>, &(OpenMesh::ArrayKernel::n_halfedges() const)>
+ |  
+ |  halfedges_empty(...)
+ |      halfedges_empty(self: openmesh.TriMesh) -> bool
+ |  
+ |  has_edge_colors(...)
+ |      has_edge_colors(self: openmesh.TriMesh) -> bool
+ |  
+ |  has_edge_property(...)
+ |      has_edge_property(self: openmesh.TriMesh, arg0: str) -> bool
+ |  
+ |  has_face_colors(...)
+ |      has_face_colors(self: openmesh.TriMesh) -> bool
+ |  
+ |  has_face_normals(...)
+ |      has_face_normals(self: openmesh.TriMesh) -> bool
+ |  
+ |  has_face_property(...)
+ |      has_face_property(self: openmesh.TriMesh, arg0: str) -> bool
+ |  
+ |  has_face_texture_index(...)
+ |      has_face_texture_index(self: openmesh.TriMesh) -> bool
+ |  
+ |  has_halfedge_colors(...)
+ |      has_halfedge_colors(self: openmesh.TriMesh) -> bool
+ |  
+ |  has_halfedge_normals(...)
+ |      has_halfedge_normals(self: openmesh.TriMesh) -> bool
+ |  
+ |  has_halfedge_property(...)
+ |      has_halfedge_property(self: openmesh.TriMesh, arg0: str) -> bool
+ |  
+ |  has_halfedge_texcoords1D(...)
+ |      has_halfedge_texcoords1D(self: openmesh.TriMesh) -> bool
+ |  
+ |  has_halfedge_texcoords2D(...)
+ |      has_halfedge_texcoords2D(self: openmesh.TriMesh) -> bool
+ |  
+ |  has_halfedge_texcoords3D(...)
+ |      has_halfedge_texcoords3D(self: openmesh.TriMesh) -> bool
+ |  
+ |  has_vertex_colors(...)
+ |      has_vertex_colors(self: openmesh.TriMesh) -> bool
+ |  
+ |  has_vertex_normals(...)
+ |      has_vertex_normals(self: openmesh.TriMesh) -> bool
+ |  
+ |  has_vertex_property(...)
+ |      has_vertex_property(self: openmesh.TriMesh, arg0: str) -> bool
+ |  
+ |  has_vertex_texcoords1D(...)
+ |      has_vertex_texcoords1D(self: openmesh.TriMesh) -> bool
+ |  
+ |  has_vertex_texcoords2D(...)
+ |      has_vertex_texcoords2D(self: openmesh.TriMesh) -> bool
+ |  
+ |  has_vertex_texcoords3D(...)
+ |      has_vertex_texcoords3D(self: openmesh.TriMesh) -> bool
+ |  
+ |  he_indices(...)
+ |      he_indices(self: openmesh.TriMesh) -> numpy.ndarray[numpy.int32]
+ |  
+ |  hf_indices(...)
+ |      hf_indices(self: openmesh.TriMesh) -> numpy.ndarray[numpy.int32]
+ |  
+ |  hfv_indices(...)
+ |      hfv_indices(self: openmesh.TriMesh) -> numpy.ndarray[numpy.int32]
+ |  
+ |  hl(...)
+ |      hl(self: openmesh.TriMesh, arg0: openmesh.HalfedgeHandle) -> CirculatorWrapperT<OpenMesh::Iterators::GenericCirculatorT_DEPRECATED<OpenMesh::PolyConnectivity::FaceHalfedgeTraits>, OpenMesh::HalfedgeHandle>
+ |  
+ |  htv_indices(...)
+ |      htv_indices(self: openmesh.TriMesh) -> numpy.ndarray[numpy.int32]
+ |  
+ |  hv_indices(...)
+ |      hv_indices(self: openmesh.TriMesh) -> numpy.ndarray[numpy.int32]
+ |  
+ |  is_boundary(...)
+ |      is_boundary(*args, **kwargs)
+ |      Overloaded function.
+ |      
+ |      1. is_boundary(self: openmesh.TriMesh, arg0: openmesh.HalfedgeHandle) -> bool
+ |      
+ |      2. is_boundary(self: openmesh.TriMesh, arg0: openmesh.EdgeHandle) -> bool
+ |      
+ |      3. is_boundary(self: openmesh.TriMesh, arg0: openmesh.VertexHandle) -> bool
+ |      
+ |      4. is_boundary(self: openmesh.TriMesh, fh: openmesh.FaceHandle, check_vertex: bool = False) -> bool
+ |  
+ |  is_collapse_ok(...)
+ |      is_collapse_ok(self: openmesh.TriMesh, arg0: openmesh.HalfedgeHandle) -> bool
+ |  
+ |  is_deleted(...)
+ |      is_deleted(*args, **kwargs)
+ |      Overloaded function.
+ |      
+ |      1. is_deleted(self: openmesh.TriMesh, arg0: openmesh.VertexHandle) -> bool
+ |      
+ |      2. is_deleted(self: openmesh.TriMesh, arg0: openmesh.HalfedgeHandle) -> bool
+ |      
+ |      3. is_deleted(self: openmesh.TriMesh, arg0: openmesh.EdgeHandle) -> bool
+ |      
+ |      4. is_deleted(self: openmesh.TriMesh, arg0: openmesh.FaceHandle) -> bool
+ |  
+ |  is_estimated_feature_edge(...)
+ |      is_estimated_feature_edge(self: openmesh.TriMesh, arg0: openmesh.HalfedgeHandle, arg1: float) -> bool
+ |  
+ |  is_flip_ok(...)
+ |      is_flip_ok(self: openmesh.TriMesh, arg0: openmesh.EdgeHandle) -> bool
+ |  
+ |  is_locked(...)
+ |      is_locked(self: openmesh.TriMesh, arg0: openmesh.VertexHandle) -> bool
+ |  
+ |  is_manifold(...)
+ |      is_manifold(self: openmesh.TriMesh, arg0: openmesh.VertexHandle) -> bool
+ |  
+ |  is_simple_link(...)
+ |      is_simple_link(self: openmesh.TriMesh, arg0: openmesh.EdgeHandle) -> bool
+ |  
+ |  is_simply_connected(...)
+ |      is_simply_connected(self: openmesh.TriMesh, arg0: openmesh.FaceHandle) -> bool
+ |  
+ |  is_trimesh(...)
+ |      is_trimesh() -> bool
+ |  
+ |  is_valid_handle(...)
+ |      is_valid_handle(*args, **kwargs)
+ |      Overloaded function.
+ |      
+ |      1. is_valid_handle(self: openmesh.TriMesh, arg0: openmesh.VertexHandle) -> bool
+ |      
+ |      2. is_valid_handle(self: openmesh.TriMesh, arg0: openmesh.HalfedgeHandle) -> bool
+ |      
+ |      3. is_valid_handle(self: openmesh.TriMesh, arg0: openmesh.EdgeHandle) -> bool
+ |      
+ |      4. is_valid_handle(self: openmesh.TriMesh, arg0: openmesh.FaceHandle) -> bool
+ |  
+ |  n_edges(...)
+ |      n_edges(self: openmesh.TriMesh) -> int
+ |  
+ |  n_faces(...)
+ |      n_faces(self: openmesh.TriMesh) -> int
+ |  
+ |  n_halfedges(...)
+ |      n_halfedges(self: openmesh.TriMesh) -> int
+ |  
+ |  n_vertices(...)
+ |      n_vertices(self: openmesh.TriMesh) -> int
+ |  
+ |  new_edge(...)
+ |      new_edge(self: openmesh.TriMesh, arg0: openmesh.VertexHandle, arg1: openmesh.VertexHandle) -> openmesh.HalfedgeHandle
+ |  
+ |  new_face(...)
+ |      new_face(*args, **kwargs)
+ |      Overloaded function.
+ |      
+ |      1. new_face(self: openmesh.TriMesh) -> openmesh.FaceHandle
+ |      
+ |      2. new_face(self: openmesh.TriMesh, arg0: OpenMesh::ArrayItems::Face) -> openmesh.FaceHandle
+ |  
+ |  new_vertex(...)
+ |      new_vertex(*args, **kwargs)
+ |      Overloaded function.
+ |      
+ |      1. new_vertex(self: openmesh.TriMesh) -> openmesh.VertexHandle
+ |      
+ |      2. new_vertex(self: openmesh.TriMesh, arg0: numpy.ndarray[numpy.float64]) -> openmesh.VertexHandle
+ |  
+ |  next_halfedge_handle(...)
+ |      next_halfedge_handle(self: openmesh.TriMesh, arg0: openmesh.HalfedgeHandle) -> openmesh.HalfedgeHandle
+ |  
+ |  normal(...)
+ |      normal(*args, **kwargs)
+ |      Overloaded function.
+ |      
+ |      1. normal(self: openmesh.TriMesh, arg0: openmesh.VertexHandle) -> numpy.ndarray[numpy.float64]
+ |      
+ |      2. normal(self: openmesh.TriMesh, arg0: openmesh.HalfedgeHandle) -> numpy.ndarray[numpy.float64]
+ |      
+ |      3. normal(self: openmesh.TriMesh, arg0: openmesh.FaceHandle) -> numpy.ndarray[numpy.float64]
+ |  
+ |  opposite_face_handle(...)
+ |      opposite_face_handle(self: openmesh.TriMesh, arg0: openmesh.HalfedgeHandle) -> OpenMesh::SmartFaceHandle
+ |  
+ |  opposite_halfedge_handle(...)
+ |      opposite_halfedge_handle(self: openmesh.TriMesh, arg0: openmesh.HalfedgeHandle) -> openmesh.HalfedgeHandle
+ |  
+ |  opposite_he_opposite_vh(...)
+ |      opposite_he_opposite_vh(self: openmesh.TriMesh, arg0: openmesh.HalfedgeHandle) -> openmesh.VertexHandle
+ |  
+ |  opposite_vh(...)
+ |      opposite_vh(self: openmesh.TriMesh, arg0: openmesh.HalfedgeHandle) -> openmesh.VertexHandle
+ |  
+ |  point(...)
+ |      point(self: openmesh.TriMesh, arg0: openmesh.VertexHandle) -> numpy.ndarray[numpy.float64]
+ |  
+ |  points(...)
+ |      points(self: openmesh.TriMesh) -> numpy.ndarray[numpy.float64]
+ |  
+ |  prev_halfedge_handle(...)
+ |      prev_halfedge_handle(self: openmesh.TriMesh, arg0: openmesh.HalfedgeHandle) -> openmesh.HalfedgeHandle
+ |  
+ |  reinsert_edge(...)
+ |      reinsert_edge(self: openmesh.TriMesh, arg0: openmesh.EdgeHandle) -> None
+ |  
+ |  release_edge_colors(...)
+ |      release_edge_colors(self: openmesh.TriMesh) -> None
+ |  
+ |  release_face_colors(...)
+ |      release_face_colors(self: openmesh.TriMesh) -> None
+ |  
+ |  release_face_normals(...)
+ |      release_face_normals(self: openmesh.TriMesh) -> None
+ |  
+ |  release_face_texture_index(...)
+ |      release_face_texture_index(self: openmesh.TriMesh) -> None
+ |  
+ |  release_halfedge_colors(...)
+ |      release_halfedge_colors(self: openmesh.TriMesh) -> None
+ |  
+ |  release_halfedge_normals(...)
+ |      release_halfedge_normals(self: openmesh.TriMesh) -> None
+ |  
+ |  release_halfedge_texcoords1D(...)
+ |      release_halfedge_texcoords1D(self: openmesh.TriMesh) -> None
+ |  
+ |  release_halfedge_texcoords2D(...)
+ |      release_halfedge_texcoords2D(self: openmesh.TriMesh) -> None
+ |  
+ |  release_halfedge_texcoords3D(...)
+ |      release_halfedge_texcoords3D(self: openmesh.TriMesh) -> None
+ |  
+ |  release_vertex_colors(...)
+ |      release_vertex_colors(self: openmesh.TriMesh) -> None
+ |  
+ |  release_vertex_normals(...)
+ |      release_vertex_normals(self: openmesh.TriMesh) -> None
+ |  
+ |  release_vertex_texcoords1D(...)
+ |      release_vertex_texcoords1D(self: openmesh.TriMesh) -> None
+ |  
+ |  release_vertex_texcoords2D(...)
+ |      release_vertex_texcoords2D(self: openmesh.TriMesh) -> None
+ |  
+ |  release_vertex_texcoords3D(...)
+ |      release_vertex_texcoords3D(self: openmesh.TriMesh) -> None
+ |  
+ |  remove_edge(...)
+ |      remove_edge(self: openmesh.TriMesh, arg0: openmesh.EdgeHandle) -> openmesh.FaceHandle
+ |  
+ |  remove_edge_property(...)
+ |      remove_edge_property(self: openmesh.TriMesh, arg0: str) -> None
+ |  
+ |  remove_face_property(...)
+ |      remove_face_property(self: openmesh.TriMesh, arg0: str) -> None
+ |  
+ |  remove_halfedge_property(...)
+ |      remove_halfedge_property(self: openmesh.TriMesh, arg0: str) -> None
+ |  
+ |  remove_vertex_property(...)
+ |      remove_vertex_property(self: openmesh.TriMesh, arg0: str) -> None
+ |  
+ |  request_edge_colors(...)
+ |      request_edge_colors(self: openmesh.TriMesh) -> None
+ |  
+ |  request_face_colors(...)
+ |      request_face_colors(self: openmesh.TriMesh) -> None
+ |  
+ |  request_face_normals(...)
+ |      request_face_normals(self: openmesh.TriMesh) -> None
+ |  
+ |  request_face_texture_index(...)
+ |      request_face_texture_index(self: openmesh.TriMesh) -> None
+ |  
+ |  request_halfedge_colors(...)
+ |      request_halfedge_colors(self: openmesh.TriMesh) -> None
+ |  
+ |  request_halfedge_normals(...)
+ |      request_halfedge_normals(self: openmesh.TriMesh) -> None
+ |  
+ |  request_halfedge_texcoords1D(...)
+ |      request_halfedge_texcoords1D(self: openmesh.TriMesh) -> None
+ |  
+ |  request_halfedge_texcoords2D(...)
+ |      request_halfedge_texcoords2D(self: openmesh.TriMesh) -> None
+ |  
+ |  request_halfedge_texcoords3D(...)
+ |      request_halfedge_texcoords3D(self: openmesh.TriMesh) -> None
+ |  
+ |  request_vertex_colors(...)
+ |      request_vertex_colors(self: openmesh.TriMesh) -> None
+ |  
+ |  request_vertex_normals(...)
+ |      request_vertex_normals(self: openmesh.TriMesh) -> None
+ |  
+ |  request_vertex_texcoords1D(...)
+ |      request_vertex_texcoords1D(self: openmesh.TriMesh) -> None
+ |  
+ |  request_vertex_texcoords2D(...)
+ |      request_vertex_texcoords2D(self: openmesh.TriMesh) -> None
+ |  
+ |  request_vertex_texcoords3D(...)
+ |      request_vertex_texcoords3D(self: openmesh.TriMesh) -> None
+ |  
+ |  reserve(...)
+ |      reserve(self: openmesh.TriMesh, arg0: int, arg1: int, arg2: int) -> None
+ |  
+ |  resize_points(...)
+ |      resize_points(self: openmesh.TriMesh, arg0: int) -> None
+ |  
+ |  sedges(...)
+ |      sedges(self: openmesh.TriMesh) -> IteratorWrapperT<OpenMesh::Iterators::GenericIteratorT<OpenMesh::PolyConnectivity, OpenMesh::EdgeHandle, OpenMesh::ArrayKernel, &(OpenMesh::ArrayKernel::has_edge_status() const), &(OpenMesh::ArrayKernel::n_edges() const)>, &(OpenMesh::ArrayKernel::n_edges() const)>
+ |  
+ |  set_color(...)
+ |      set_color(*args, **kwargs)
+ |      Overloaded function.
+ |      
+ |      1. set_color(self: openmesh.TriMesh, arg0: openmesh.VertexHandle, arg1: numpy.ndarray[numpy.float32]) -> None
+ |      
+ |      2. set_color(self: openmesh.TriMesh, arg0: openmesh.HalfedgeHandle, arg1: numpy.ndarray[numpy.float32]) -> None
+ |      
+ |      3. set_color(self: openmesh.TriMesh, arg0: openmesh.EdgeHandle, arg1: numpy.ndarray[numpy.float32]) -> None
+ |      
+ |      4. set_color(self: openmesh.TriMesh, arg0: openmesh.FaceHandle, arg1: numpy.ndarray[numpy.float32]) -> None
+ |  
+ |  set_deleted(...)
+ |      set_deleted(*args, **kwargs)
+ |      Overloaded function.
+ |      
+ |      1. set_deleted(self: openmesh.TriMesh, arg0: openmesh.VertexHandle, arg1: bool) -> None
+ |      
+ |      2. set_deleted(self: openmesh.TriMesh, arg0: openmesh.HalfedgeHandle, arg1: bool) -> None
+ |      
+ |      3. set_deleted(self: openmesh.TriMesh, arg0: openmesh.EdgeHandle, arg1: bool) -> None
+ |      
+ |      4. set_deleted(self: openmesh.TriMesh, arg0: openmesh.FaceHandle, arg1: bool) -> None
+ |  
+ |  set_edge_property(...)
+ |      set_edge_property(*args, **kwargs)
+ |      Overloaded function.
+ |      
+ |      1. set_edge_property(self: openmesh.TriMesh, arg0: str, arg1: openmesh.EdgeHandle, arg2: object) -> None
+ |      
+ |      2. set_edge_property(self: openmesh.TriMesh, arg0: str, arg1: list) -> None
+ |  
+ |  set_edge_property_array(...)
+ |      set_edge_property_array(self: openmesh.TriMesh, arg0: str, arg1: numpy.ndarray[numpy.float64]) -> None
+ |  
+ |  set_face_handle(...)
+ |      set_face_handle(self: openmesh.TriMesh, arg0: openmesh.HalfedgeHandle, arg1: openmesh.FaceHandle) -> None
+ |  
+ |  set_face_property(...)
+ |      set_face_property(*args, **kwargs)
+ |      Overloaded function.
+ |      
+ |      1. set_face_property(self: openmesh.TriMesh, arg0: str, arg1: openmesh.FaceHandle, arg2: object) -> None
+ |      
+ |      2. set_face_property(self: openmesh.TriMesh, arg0: str, arg1: list) -> None
+ |  
+ |  set_face_property_array(...)
+ |      set_face_property_array(self: openmesh.TriMesh, arg0: str, arg1: numpy.ndarray[numpy.float64]) -> None
+ |  
+ |  set_feature(...)
+ |      set_feature(*args, **kwargs)
+ |      Overloaded function.
+ |      
+ |      1. set_feature(self: openmesh.TriMesh, arg0: openmesh.EdgeHandle, arg1: bool) -> None
+ |      
+ |      2. set_feature(self: openmesh.TriMesh, arg0: openmesh.VertexHandle, arg1: bool) -> None
+ |  
+ |  set_halfedge_handle(...)
+ |      set_halfedge_handle(*args, **kwargs)
+ |      Overloaded function.
+ |      
+ |      1. set_halfedge_handle(self: openmesh.TriMesh, arg0: openmesh.VertexHandle, arg1: openmesh.HalfedgeHandle) -> None
+ |      
+ |      2. set_halfedge_handle(self: openmesh.TriMesh, arg0: openmesh.FaceHandle, arg1: openmesh.HalfedgeHandle) -> None
+ |  
+ |  set_halfedge_property(...)
+ |      set_halfedge_property(*args, **kwargs)
+ |      Overloaded function.
+ |      
+ |      1. set_halfedge_property(self: openmesh.TriMesh, arg0: str, arg1: openmesh.HalfedgeHandle, arg2: object) -> None
+ |      
+ |      2. set_halfedge_property(self: openmesh.TriMesh, arg0: str, arg1: list) -> None
+ |  
+ |  set_halfedge_property_array(...)
+ |      set_halfedge_property_array(self: openmesh.TriMesh, arg0: str, arg1: numpy.ndarray[numpy.float64]) -> None
+ |  
+ |  set_locked(...)
+ |      set_locked(self: openmesh.TriMesh, arg0: openmesh.VertexHandle, arg1: bool) -> None
+ |  
+ |  set_next_halfedge_handle(...)
+ |      set_next_halfedge_handle(self: openmesh.TriMesh, arg0: openmesh.HalfedgeHandle, arg1: openmesh.HalfedgeHandle) -> None
+ |  
+ |  set_normal(...)
+ |      set_normal(*args, **kwargs)
+ |      Overloaded function.
+ |      
+ |      1. set_normal(self: openmesh.TriMesh, arg0: openmesh.VertexHandle, arg1: numpy.ndarray[numpy.float64]) -> None
+ |      
+ |      2. set_normal(self: openmesh.TriMesh, arg0: openmesh.HalfedgeHandle, arg1: numpy.ndarray[numpy.float64]) -> None
+ |      
+ |      3. set_normal(self: openmesh.TriMesh, arg0: openmesh.FaceHandle, arg1: numpy.ndarray[numpy.float64]) -> None
+ |  
+ |  set_point(...)
+ |      set_point(self: openmesh.TriMesh, arg0: openmesh.VertexHandle, arg1: numpy.ndarray[numpy.float64]) -> None
+ |  
+ |  set_texcoord1D(...)
+ |      set_texcoord1D(*args, **kwargs)
+ |      Overloaded function.
+ |      
+ |      1. set_texcoord1D(self: openmesh.TriMesh, arg0: openmesh.VertexHandle, arg1: numpy.ndarray[numpy.float64]) -> None
+ |      
+ |      2. set_texcoord1D(self: openmesh.TriMesh, arg0: openmesh.HalfedgeHandle, arg1: numpy.ndarray[numpy.float64]) -> None
+ |  
+ |  set_texcoord2D(...)
+ |      set_texcoord2D(*args, **kwargs)
+ |      Overloaded function.
+ |      
+ |      1. set_texcoord2D(self: openmesh.TriMesh, arg0: openmesh.VertexHandle, arg1: numpy.ndarray[numpy.float64]) -> None
+ |      
+ |      2. set_texcoord2D(self: openmesh.TriMesh, arg0: openmesh.HalfedgeHandle, arg1: numpy.ndarray[numpy.float64]) -> None
+ |  
+ |  set_texcoord3D(...)
+ |      set_texcoord3D(*args, **kwargs)
+ |      Overloaded function.
+ |      
+ |      1. set_texcoord3D(self: openmesh.TriMesh, arg0: openmesh.VertexHandle, arg1: numpy.ndarray[numpy.float64]) -> None
+ |      
+ |      2. set_texcoord3D(self: openmesh.TriMesh, arg0: openmesh.HalfedgeHandle, arg1: numpy.ndarray[numpy.float64]) -> None
+ |  
+ |  set_texture_index(...)
+ |      set_texture_index(self: openmesh.TriMesh, arg0: openmesh.FaceHandle, arg1: int) -> None
+ |  
+ |  set_vertex_handle(...)
+ |      set_vertex_handle(self: openmesh.TriMesh, arg0: openmesh.HalfedgeHandle, arg1: openmesh.VertexHandle) -> None
+ |  
+ |  set_vertex_property(...)
+ |      set_vertex_property(*args, **kwargs)
+ |      Overloaded function.
+ |      
+ |      1. set_vertex_property(self: openmesh.TriMesh, arg0: str, arg1: openmesh.VertexHandle, arg2: object) -> None
+ |      
+ |      2. set_vertex_property(self: openmesh.TriMesh, arg0: str, arg1: list) -> None
+ |  
+ |  set_vertex_property_array(...)
+ |      set_vertex_property_array(self: openmesh.TriMesh, arg0: str, arg1: numpy.ndarray[numpy.float64]) -> None
+ |  
+ |  sfaces(...)
+ |      sfaces(self: openmesh.TriMesh) -> IteratorWrapperT<OpenMesh::Iterators::GenericIteratorT<OpenMesh::PolyConnectivity, OpenMesh::FaceHandle, OpenMesh::ArrayKernel, &(OpenMesh::ArrayKernel::has_face_status() const), &(OpenMesh::ArrayKernel::n_faces() const)>, &(OpenMesh::ArrayKernel::n_faces() const)>
+ |  
+ |  shalfedges(...)
+ |      shalfedges(self: openmesh.TriMesh) -> IteratorWrapperT<OpenMesh::Iterators::GenericIteratorT<OpenMesh::PolyConnectivity, OpenMesh::HalfedgeHandle, OpenMesh::ArrayKernel, &(OpenMesh::ArrayKernel::has_halfedge_status() const), &(OpenMesh::ArrayKernel::n_halfedges() const)>, &(OpenMesh::ArrayKernel::n_halfedges() const)>
+ |  
+ |  split(...)
+ |      split(*args, **kwargs)
+ |      Overloaded function.
+ |      
+ |      1. split(self: openmesh.TriMesh, arg0: openmesh.FaceHandle, arg1: openmesh.VertexHandle) -> None
+ |      
+ |      2. split(self: openmesh.TriMesh, arg0: openmesh.EdgeHandle, arg1: openmesh.VertexHandle) -> None
+ |      
+ |      3. split(self: openmesh.TriMesh, arg0: openmesh.EdgeHandle, arg1: numpy.ndarray[numpy.float64]) -> OpenMesh::SmartVertexHandle
+ |      
+ |      4. split(self: openmesh.TriMesh, arg0: openmesh.FaceHandle, arg1: numpy.ndarray[numpy.float64]) -> OpenMesh::SmartVertexHandle
+ |  
+ |  split_copy(...)
+ |      split_copy(*args, **kwargs)
+ |      Overloaded function.
+ |      
+ |      1. split_copy(self: openmesh.TriMesh, arg0: openmesh.FaceHandle, arg1: openmesh.VertexHandle) -> None
+ |      
+ |      2. split_copy(self: openmesh.TriMesh, arg0: openmesh.EdgeHandle, arg1: openmesh.VertexHandle) -> None
+ |      
+ |      3. split_copy(self: openmesh.TriMesh, arg0: openmesh.EdgeHandle, arg1: numpy.ndarray[numpy.float64]) -> OpenMesh::SmartVertexHandle
+ |      
+ |      4. split_copy(self: openmesh.TriMesh, arg0: openmesh.FaceHandle, arg1: numpy.ndarray[numpy.float64]) -> OpenMesh::SmartVertexHandle
+ |  
+ |  split_edge(...)
+ |      split_edge(self: openmesh.TriMesh, arg0: openmesh.EdgeHandle, arg1: openmesh.VertexHandle) -> None
+ |  
+ |  split_edge_copy(...)
+ |      split_edge_copy(self: openmesh.TriMesh, arg0: openmesh.EdgeHandle, arg1: openmesh.VertexHandle) -> None
+ |  
+ |  svertices(...)
+ |      svertices(self: openmesh.TriMesh) -> IteratorWrapperT<OpenMesh::Iterators::GenericIteratorT<OpenMesh::PolyConnectivity, OpenMesh::VertexHandle, OpenMesh::ArrayKernel, &(OpenMesh::ArrayKernel::has_vertex_status() const), &(OpenMesh::ArrayKernel::n_vertices() const)>, &(OpenMesh::ArrayKernel::n_vertices() const)>
+ |  
+ |  texcoord1D(...)
+ |      texcoord1D(*args, **kwargs)
+ |      Overloaded function.
+ |      
+ |      1. texcoord1D(self: openmesh.TriMesh, arg0: openmesh.VertexHandle) -> numpy.ndarray[numpy.float64]
+ |      
+ |      2. texcoord1D(self: openmesh.TriMesh, arg0: openmesh.HalfedgeHandle) -> numpy.ndarray[numpy.float64]
+ |  
+ |  texcoord2D(...)
+ |      texcoord2D(*args, **kwargs)
+ |      Overloaded function.
+ |      
+ |      1. texcoord2D(self: openmesh.TriMesh, arg0: openmesh.VertexHandle) -> numpy.ndarray[numpy.float64]
+ |      
+ |      2. texcoord2D(self: openmesh.TriMesh, arg0: openmesh.HalfedgeHandle) -> numpy.ndarray[numpy.float64]
+ |  
+ |  texcoord3D(...)
+ |      texcoord3D(*args, **kwargs)
+ |      Overloaded function.
+ |      
+ |      1. texcoord3D(self: openmesh.TriMesh, arg0: openmesh.VertexHandle) -> numpy.ndarray[numpy.float64]
+ |      
+ |      2. texcoord3D(self: openmesh.TriMesh, arg0: openmesh.HalfedgeHandle) -> numpy.ndarray[numpy.float64]
+ |  
+ |  texture_index(...)
+ |      texture_index(self: openmesh.TriMesh, arg0: openmesh.FaceHandle) -> int
+ |  
+ |  texture_name(...)
+ |      texture_name(self: openmesh.TriMesh, arg0: int) -> str
+ |  
+ |  to_vertex_handle(...)
+ |      to_vertex_handle(self: openmesh.TriMesh, arg0: openmesh.HalfedgeHandle) -> openmesh.VertexHandle
+ |  
+ |  triangulate(...)
+ |      triangulate(*args, **kwargs)
+ |      Overloaded function.
+ |      
+ |      1. triangulate(self: openmesh.TriMesh, arg0: openmesh.FaceHandle) -> None
+ |      
+ |      2. triangulate(self: openmesh.TriMesh) -> None
+ |  
+ |  update_face_normals(...)
+ |      update_face_normals(self: openmesh.TriMesh) -> None
+ |  
+ |  update_halfedge_normals(...)
+ |      update_halfedge_normals(self: openmesh.TriMesh, feature_angle: float = 0.8) -> None
+ |  
+ |  update_normal(...)
+ |      update_normal(*args, **kwargs)
+ |      Overloaded function.
+ |      
+ |      1. update_normal(self: openmesh.TriMesh, arg0: openmesh.FaceHandle) -> None
+ |      
+ |      2. update_normal(self: openmesh.TriMesh, heh: openmesh.HalfedgeHandle, feature_angle: float = 0.8) -> None
+ |      
+ |      3. update_normal(self: openmesh.TriMesh, arg0: openmesh.VertexHandle) -> None
+ |  
+ |  update_normals(...)
+ |      update_normals(self: openmesh.TriMesh) -> None
+ |  
+ |  update_vertex_normals(...)
+ |      update_vertex_normals(self: openmesh.TriMesh) -> None
+ |  
+ |  valence(...)
+ |      valence(*args, **kwargs)
+ |      Overloaded function.
+ |      
+ |      1. valence(self: openmesh.TriMesh, arg0: openmesh.VertexHandle) -> int
+ |      
+ |      2. valence(self: openmesh.TriMesh, arg0: openmesh.FaceHandle) -> int
+ |  
+ |  ve(...)
+ |      ve(self: openmesh.TriMesh, arg0: openmesh.VertexHandle) -> CirculatorWrapperT<OpenMesh::Iterators::GenericCirculatorT_DEPRECATED<OpenMesh::PolyConnectivity::VertexEdgeTraits>, OpenMesh::VertexHandle>
+ |  
+ |  ve_indices(...)
+ |      ve_indices(self: openmesh.TriMesh) -> numpy.ndarray[numpy.int32]
+ |  
+ |  vertex_colors(...)
+ |      vertex_colors(self: openmesh.TriMesh) -> numpy.ndarray[numpy.float32]
+ |  
+ |  vertex_edge_indices(...)
+ |      vertex_edge_indices(self: openmesh.TriMesh) -> numpy.ndarray[numpy.int32]
+ |  
+ |  vertex_face_indices(...)
+ |      vertex_face_indices(self: openmesh.TriMesh) -> numpy.ndarray[numpy.int32]
+ |  
+ |  vertex_handle(...)
+ |      vertex_handle(self: openmesh.TriMesh, arg0: int) -> openmesh.VertexHandle
+ |  
+ |  vertex_incoming_halfedge_indices(...)
+ |      vertex_incoming_halfedge_indices(self: openmesh.TriMesh) -> numpy.ndarray[numpy.int32]
+ |  
+ |  vertex_normals(...)
+ |      vertex_normals(self: openmesh.TriMesh) -> numpy.ndarray[numpy.float64]
+ |  
+ |  vertex_outgoing_halfedge_indices(...)
+ |      vertex_outgoing_halfedge_indices(self: openmesh.TriMesh) -> numpy.ndarray[numpy.int32]
+ |  
+ |  vertex_property(...)
+ |      vertex_property(*args, **kwargs)
+ |      Overloaded function.
+ |      
+ |      1. vertex_property(self: openmesh.TriMesh, arg0: str, arg1: openmesh.VertexHandle) -> object
+ |      
+ |      2. vertex_property(self: openmesh.TriMesh, arg0: str) -> list
+ |  
+ |  vertex_property_array(...)
+ |      vertex_property_array(self: openmesh.TriMesh, arg0: str) -> numpy.ndarray[numpy.float64]
+ |  
+ |  vertex_split(...)
+ |      vertex_split(*args, **kwargs)
+ |      Overloaded function.
+ |      
+ |      1. vertex_split(self: openmesh.TriMesh, arg0: openmesh.VertexHandle, arg1: openmesh.VertexHandle, arg2: openmesh.VertexHandle, arg3: openmesh.VertexHandle) -> openmesh.HalfedgeHandle
+ |      
+ |      2. vertex_split(self: openmesh.TriMesh, arg0: numpy.ndarray[numpy.float64], arg1: openmesh.VertexHandle, arg2: openmesh.VertexHandle, arg3: openmesh.VertexHandle) -> openmesh.HalfedgeHandle
+ |  
+ |  vertex_texcoords1D(...)
+ |      vertex_texcoords1D(self: openmesh.TriMesh) -> numpy.ndarray[numpy.float64]
+ |  
+ |  vertex_texcoords2D(...)
+ |      vertex_texcoords2D(self: openmesh.TriMesh) -> numpy.ndarray[numpy.float64]
+ |  
+ |  vertex_texcoords3D(...)
+ |      vertex_texcoords3D(self: openmesh.TriMesh) -> numpy.ndarray[numpy.float64]
+ |  
+ |  vertex_vertex_indices(...)
+ |      vertex_vertex_indices(self: openmesh.TriMesh) -> numpy.ndarray[numpy.int32]
+ |  
+ |  vertices(...)
+ |      vertices(self: openmesh.TriMesh) -> IteratorWrapperT<OpenMesh::Iterators::GenericIteratorT<OpenMesh::PolyConnectivity, OpenMesh::VertexHandle, OpenMesh::ArrayKernel, &(OpenMesh::ArrayKernel::has_vertex_status() const), &(OpenMesh::ArrayKernel::n_vertices() const)>, &(OpenMesh::ArrayKernel::n_vertices() const)>
+ |  
+ |  vertices_empty(...)
+ |      vertices_empty(self: openmesh.TriMesh) -> bool
+ |  
+ |  vf(...)
+ |      vf(self: openmesh.TriMesh, arg0: openmesh.VertexHandle) -> CirculatorWrapperT<OpenMesh::Iterators::GenericCirculatorT_DEPRECATED<OpenMesh::PolyConnectivity::VertexFaceTraits>, OpenMesh::VertexHandle>
+ |  
+ |  vf_indices(...)
+ |      vf_indices(self: openmesh.TriMesh) -> numpy.ndarray[numpy.int32]
+ |  
+ |  vih(...)
+ |      vih(self: openmesh.TriMesh, arg0: openmesh.VertexHandle) -> CirculatorWrapperT<OpenMesh::Iterators::GenericCirculatorT_DEPRECATED<OpenMesh::PolyConnectivity::VertexOppositeHalfedgeTraits>, OpenMesh::VertexHandle>
+ |  
+ |  vih_indices(...)
+ |      vih_indices(self: openmesh.TriMesh) -> numpy.ndarray[numpy.int32]
+ |  
+ |  voh(...)
+ |      voh(self: openmesh.TriMesh, arg0: openmesh.VertexHandle) -> CirculatorWrapperT<OpenMesh::Iterators::GenericCirculatorT_DEPRECATED<OpenMesh::PolyConnectivity::VertexHalfedgeTraits>, OpenMesh::VertexHandle>
+ |  
+ |  voh_indices(...)
+ |      voh_indices(self: openmesh.TriMesh) -> numpy.ndarray[numpy.int32]
+ |  
+ |  vv(...)
+ |      vv(self: openmesh.TriMesh, arg0: openmesh.VertexHandle) -> CirculatorWrapperT<OpenMesh::Iterators::GenericCirculatorT_DEPRECATED<OpenMesh::PolyConnectivity::VertexVertexTraits>, OpenMesh::VertexHandle>
+ |  
+ |  vv_indices(...)
+ |      vv_indices(self: openmesh.TriMesh) -> numpy.ndarray[numpy.int32]
+ |  
+ |  ----------------------------------------------------------------------
+ |  Static methods defined here:
+ |  
+ |  is_polymesh(...) from builtins.PyCapsule
+ |      is_polymesh() -> bool
+ |  
+ |  is_triangles(...) from builtins.PyCapsule
+ |      is_triangles() -> bool
+ |  
+ |  ----------------------------------------------------------------------
+ |  Readonly properties defined here:
+ |  
+ |  InvalidEdgeHandle
+ |  
+ |  InvalidFaceHandle
+ |  
+ |  InvalidHalfedgeHandle
+ |  
+ |  InvalidVertexHandle
+ |  
+ |  ----------------------------------------------------------------------
+ |  Static methods inherited from pybind11_builtins.pybind11_object:
+ |  
+ |  __new__(*args, **kwargs) from pybind11_builtins.pybind11_type
+ |      Create and return a new object.  See help(type) for accurate signature.
+
