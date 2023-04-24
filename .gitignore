@@ -8,3 +8,8 @@
 *.njsproj
 *.sln
 
+models/test
+models/result
+models/wL*
+models/indor*
+data
