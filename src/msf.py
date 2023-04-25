@@ -26,7 +26,7 @@ class MSF:
     vertices_color = None
 
     scale = None
-    scale_start = None
+    scale_min = None
     scale_delta = None
     scale_max = None
     scale_fix = None
@@ -68,7 +68,7 @@ class MSF:
         bbox = self.mesh.bounding_box
         diag_len = np.max(np.linalg.norm(bbox.vertices - bbox.vertices[0], axis=1))
         self.scale = diag_len * self.config['scale']
-        self.scale_start = diag_len * self.config['scale_start']
+        self.scale_min = diag_len * self.config['scale_min']
         self.scale_delta = diag_len * self.config['scale_delta']
         self.scale_max = diag_len * self.config['scale_max']
         self.scale_fix = diag_len * self.config['scale_fix']
@@ -171,7 +171,7 @@ class MSF:
         if self.config['use_dynamic_scale']:
             self.scale += self.scale_delta
             if self.scale > self.scale_max:
-                self.scale = self.scale_start
+                self.scale = self.scale_min
             self.logger.logging('Adjust scale to', self.scale, to_console=True)
 
         voronoi_mesh = trimesh.Trimesh(vertices=self.voronoi_poles, faces=self.mesh.faces)

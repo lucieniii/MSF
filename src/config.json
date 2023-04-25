@@ -3,23 +3,23 @@
     "wH": 10,
     "wM": 20,
 
-    "use_dynamic_scale": false,
+    "use_dynamic_scale": true,
     "scale":        0.002,
-    "scale_start":  0.002,
+    "scale_min":    0.002,
     "scale_delta":  0.0001,
     "scale_max":    0.016,
     "scale_fix":    0.0002,
 
     "alpha": 110,
 
-    "smooth_lam": 0.01,
-    "smooth_it": 1,
+    "smooth_lam":   0.01,
+    "smooth_it":    1,
 
     "use_reconstruction_in_voronoi": true,
         "k": 200,
 
     "Laplacian_type": "tangent",
-    
+
     "lsqr_args": {
         "damp": 0.0, 
         "atol": 1e-6,
