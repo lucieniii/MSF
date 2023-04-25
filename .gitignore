@@ -13,3 +13,6 @@ models/result
 models/wL*
 models/indor*
 data
+result
+
+__pycache__
