@@ -1,8 +1,5 @@
-import trimesh
-
-import scipy as sp
-from scipy.sparse.linalg import eigs, lsqr
-from scipy.sparse import csr_matrix, coo_matrix, identity, vstack, diags
+from scipy.sparse.linalg import lsqr
+from scipy.sparse import vstack
 
 import numpy as np
 

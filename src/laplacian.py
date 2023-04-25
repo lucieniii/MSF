@@ -1,11 +1,8 @@
 import numpy as np
 import trimesh
-
-from tqdm import tqdm
-
 from scipy.sparse.linalg import eigs, spsolve
 from scipy.sparse import csr_matrix, coo_matrix, identity
-
+from tqdm import tqdm
 from enum import Enum
 
 class LaplacianType(Enum):

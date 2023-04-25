@@ -27,7 +27,7 @@ def write_trimesh_with_color(mesh, path, colors):
     o3d_mesh.vertex_colors = o3d.utility.Vector3dVector(colors)
     write_mesh_o3d(path, o3d_mesh)
 
-class logger:
+class Logger:
 
     result_path = None
     log_file = None

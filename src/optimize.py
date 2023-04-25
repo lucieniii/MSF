@@ -199,7 +199,7 @@ def collapse_Edges(mesh, T, voronoi_poles, WL, WH, WM, is_fixed, v_color):
             v_color = np.delete(v_color, collapsed, axis=0)
         n_collapsed += len(collapsed)
         n_it += 1
-    # print(n_collapsed, "vertices collapsed in", n_it, "iterations.")
+    print(n_collapsed, "vertices collapsed in", n_it, "iterations.")
     assert mesh.is_watertight
     return voronoi_poles, WL, WH, WM, is_fixed, v_color, n_collapsed, n_it
 
@@ -213,6 +213,6 @@ def split_Faces(mesh, D, voronoi_poles, is_fixed, short_edge):
         n_added += v_count
         t_is_fixed = np.hstack((is_fixed, np.zeros((n_added,), dtype=bool)))
         n_it += 1
-    # print(n_added, "vertices added in", n_it, "iterations.")
+    print(n_added, "vertices added in", n_it, "iterations.")
     assert mesh.is_watertight
     return n_added, voronoi_poles, n_it
