@@ -174,6 +174,10 @@ class MSF:
                 self.scale = self.scale_min
             self.logger.logging('Adjust scale to', self.scale, to_console=True)
 
+        n_vertices = self.mesh.vertices.shape[0]
+        n_fixed = np.where(self.is_fixed)[0].shape[0]
+        self.logger.logging(n_fixed, 'of', n_vertices, 'fixed in this iteration.', to_console=True)
+
         voronoi_mesh = trimesh.Trimesh(vertices=self.voronoi_poles, faces=self.mesh.faces)
         self.mesh_saver.save_voronoi(voronoi_mesh)
         self.mesh_saver.save_skeleton(self.mesh, self.vertices_color)
