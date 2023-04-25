@@ -1,5 +1,5 @@
 from scipy.sparse.linalg import lsqr
-from scipy.sparse import vstack
+from scipy.sparse import vstack, diags
 
 import numpy as np
 
@@ -26,8 +26,8 @@ class Solver:
 
     def __construct_equation(self):
         vn = self.vertices.shape[0]
-        A = vstack((self.WL * self.L, self.WH, self.WM))
-        b = np.vstack((np.zeros((vn, 3)), self.WH * self.vertices, self.WM * self.voronoi_poles))
+        A = vstack((diags(self.WL) * self.L, diags(self.WH), diags(self.WM)))
+        b = np.vstack((np.zeros((vn, 3)), diags(self.WH) * self.vertices, diags(self.WM) * self.voronoi_poles))
         return A, b
 
     def solve(self, x0, logfunc=None, log_to_console=False):
@@ -44,8 +44,8 @@ class Solver:
         new_vertices[:, 2] = new_vertices2[0]
 
         if logfunc:
-            logfunc('lsqr status:', new_vertices0[1], 'l2 norm', np.linalg.norm(A @ new_vertices0[0] - b[:, 0]), to_console=log_to_console)
-            logfunc('lsqr status:', new_vertices1[1], 'l2 norm', np.linalg.norm(A @ new_vertices1[0] - b[:, 1]), to_console=log_to_console)
-            logfunc('lsqr status:', new_vertices2[1], 'l2 norm', np.linalg.norm(A @ new_vertices2[0] - b[:, 2]), to_console=log_to_console)
+            logfunc('lsqr status:', new_vertices0[1], 'l2 norm:', np.linalg.norm(A @ new_vertices0[0] - b[:, 0]), to_console=log_to_console)
+            logfunc('lsqr status:', new_vertices1[1], 'l2 norm:', np.linalg.norm(A @ new_vertices1[0] - b[:, 1]), to_console=log_to_console)
+            logfunc('lsqr status:', new_vertices2[1], 'l2 norm:', np.linalg.norm(A @ new_vertices2[0] - b[:, 2]), to_console=log_to_console)
 
         return new_vertices

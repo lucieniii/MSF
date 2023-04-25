@@ -5,23 +5,18 @@ from scipy.sparse import csr_matrix, coo_matrix, identity
 from tqdm import tqdm
 from enum import Enum
 
-class LaplacianType(Enum):
-    UNIFORM = 'uniform'
-    TANGENT = 'tangent'
-    COTANGENT = 'cotangent'
-
-class Laplacian(LaplacianType):
+class Laplacian:
 
     EPS = 1e-8
     generator = None
 
     def __init__(self, laplacian_type):
         super().__init__()
-        if laplacian_type == self.UNIFORM:
+        if laplacian_type == 'uniform':
             self.generator = self.trimesh_generate_uniform_Laplace_matrix
-        elif laplacian_type == self.TANGENT:
+        elif laplacian_type == 'tangent':
             self.generator = self.trimesh_generate_tangent_Laplace_matrix
-        elif laplacian_type == self.COTANGENT:
+        elif laplacian_type == 'cotangent':
             self.generator = self.trimesh_generate_cotangent_Laplace_matrix
 
     def trimesh_generate_area_list(self, mesh):
@@ -77,7 +72,7 @@ class Laplacian(LaplacianType):
         vertices = np.asarray(mesh.vertices)
         
         with tqdm(total=face_count) as tbar:
-            
+            tbar.set_description('Constructing Tangent Laplace Matrix.')
             for face, angles in zip(faces, face_angles):
                 for i in range(3):
                     alpha0, alpha1, alpha2 = angles[vertices_face_indexs[i]]

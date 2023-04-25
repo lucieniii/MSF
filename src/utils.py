@@ -79,13 +79,13 @@ class MeshSaver:
 
     def save_skeleton(self, mesh, colors=None):
         file_name = 'skeleton_%d.obj' % self.skeleton_counter
-        if colors:
+        if colors is not None:
             write_trimesh_with_color(mesh, os.path.join(self.skeleton_path, file_name), colors)
         else:
             write_trimesh(mesh, os.path.join(self.skeleton_path, file_name))
         self.skeleton_counter += 1
 
-class config:
+class Config:
 
     config_path = None
 
@@ -95,3 +95,7 @@ class config:
     
     def load_config(self):
         return json.load(open(self.config_path, 'r'))
+
+    def save_config(self, config, save_dir):
+        json.dump(config, open(os.path.join(save_dir, 'config.json'), 'w'))
+        

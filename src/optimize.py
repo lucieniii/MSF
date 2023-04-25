@@ -123,7 +123,7 @@ def splitter(mesh, D, voronoi_poles, is_fixed, short_edge=0.0):
     mesh.vertices = v_to_add
     mesh.faces = faces_new
 
-    assert mesh.is_watertight
+    assert mesh.is_watertight, 'mesh is not watertight'
 
     return v_add != 0, v_add, vor_to_add
 
@@ -200,7 +200,7 @@ def collapse_Edges(mesh, T, voronoi_poles, WL, WH, WM, is_fixed, v_color):
         n_collapsed += len(collapsed)
         n_it += 1
     print(n_collapsed, "vertices collapsed in", n_it, "iterations.")
-    assert mesh.is_watertight
+    assert mesh.is_watertight, 'mesh is not watertight'
     return voronoi_poles, WL, WH, WM, is_fixed, v_color, n_collapsed, n_it
 
 def split_Faces(mesh, D, voronoi_poles, is_fixed, short_edge):
@@ -214,5 +214,5 @@ def split_Faces(mesh, D, voronoi_poles, is_fixed, short_edge):
         t_is_fixed = np.hstack((is_fixed, np.zeros((n_added,), dtype=bool)))
         n_it += 1
     print(n_added, "vertices added in", n_it, "iterations.")
-    assert mesh.is_watertight
+    assert mesh.is_watertight, 'mesh is not watertight'
     return n_added, voronoi_poles, n_it
