@@ -42,3 +42,6 @@ msf.iterate()
 + `k`, Parameter in mesh reconstruction, only be used when `use_reconstruction_in_voronoi=true`, which means using the eigen vectors corresponding to the `k` smallest eigen values to perform reconstruction;
 + `Laplacian_type`, Determine which Laplace–Beltrami operator to use. Choose one of: `uniform`, `cotangent` and `tangent`.
 + `lsqr_args`, Parameters for `scipy.sparse.linalg.lsqr`. Generally not modified.
+
+## Algorithm Procedure Code
+![procedure_code](docs/procedure_code.png)
