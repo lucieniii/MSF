@@ -39,6 +39,8 @@ class MSF:
     
     it_counter = 0
 
+    skeletonization_rate = 0
+
     __initialized = None
 
     def __init__(self):
@@ -46,7 +48,8 @@ class MSF:
         self.config = self.configger.load_config()
         self.logger = utils.Logger()
         self.mesh_saver = utils.MeshSaver(self.logger.result_path)
-        self.laplacian = laplacian.Laplacian(self.config['Laplacian_type'])
+        # self.laplacian = laplacian.Laplacian(self.config['Laplacian_type'])
+        self.laplacian = laplacian.Laplacian('tangent')
         self.solver = solver.Solver(self.config['lsqr_args'])
         self.configger.save_config(self.config, self.logger.result_path)
         self.__initialized = False
@@ -75,15 +78,22 @@ class MSF:
 
         # Calculate Voronoi Points
         if self.config['use_reconstruction_in_voronoi']:
-            self.logger.logging('Performing mesh reconstruction.', to_console=True)
+            self.logger.logging('Performing mesh reconstruction for Voronoi diagram, k =', 
+                                self.config['k_voronoi'], to_console=True)
             self.voronoi_poles = voronoi.calculate_voronoi_poles(
                 self.laplacian.mesh_reconstruction(
-                    self.mesh, self.config['k']))
+                    self.mesh, self.config['k_voronoi']))
         else:
             self.voronoi_poles = voronoi.calculate_voronoi_poles(self.mesh)
+        
         voronoi_mesh = trimesh.Trimesh(vertices=self.voronoi_poles, faces=self.mesh.faces)
         self.mesh_saver.save_voronoi(voronoi_mesh)
 
+        if self.config['use_reconstruction_in_skeletonization']:
+            self.logger.logging('Performing mesh reconstruction for skeletonization, k =', 
+                                self.config['k_skeleton'], to_console=True)
+            self.mesh = self.laplacian.mesh_reconstruction(self.mesh, self.config['k_skeleton'])
+        
         # set parameters
         self.WL = np.ones((self.mesh.vertices.shape[0])) * self.config['wL']
         self.WH = np.ones((self.mesh.vertices.shape[0])) * self.config['wH']
@@ -93,6 +103,10 @@ class MSF:
 
         # optimize the mesh one time at first
         self.optimize_mesh()
+
+        # Save Initialized Mesh
+        self.mesh_saver.save_mash(
+            self.mesh, os.path.join(self.logger.result_path, 'initialized_mesh.obj'))
 
         self.__initialized = True
 
@@ -138,7 +152,7 @@ class MSF:
 
         self.logger.logging(fix_counter, 'vertices fixed in this interation.', to_console=True)
 
-    def iterate(self):
+    def __iterate(self):
         
         self.logger.logging('-------------------------------------', to_console=True)
         
@@ -158,9 +172,10 @@ class MSF:
         
         self.mesh.vertices = self.solver.solve(vertices, logfunc=self.logger.logging)
 
-        self.logger.logging('Perform Implicit Laplacian mesh smoothing.', to_console=True)
-        self.mesh = self.laplacian.implicit_Laplacian_mesh_smoothing(
-            self.mesh, self.config['smooth_lam'], self.config['smooth_it'], self.is_fixed)
+        if self.config['use_Laplacian_smoothing']:
+            self.logger.logging('Perform Implicit Laplacian mesh smoothing.', to_console=True)
+            self.mesh = self.laplacian.implicit_Laplacian_mesh_smoothing(
+                self.mesh, self.config['smooth_lam'], self.config['smooth_it'], self.is_fixed)
         
         self.logger.logging('Optimizing mesh.', to_console=True)
         self.optimize_mesh()
@@ -176,11 +191,17 @@ class MSF:
 
         n_vertices = self.mesh.vertices.shape[0]
         n_fixed = np.where(self.is_fixed)[0].shape[0]
+        self.skeletonization_rate = n_fixed / n_vertices
         self.logger.logging(n_fixed, 'of', n_vertices, 'fixed in this iteration.', to_console=True)
 
         voronoi_mesh = trimesh.Trimesh(vertices=self.voronoi_poles, faces=self.mesh.faces)
         self.mesh_saver.save_voronoi(voronoi_mesh)
         self.mesh_saver.save_skeleton(self.mesh, self.vertices_color)
+
+    def iterate(self, t=1):
+
+        for _ in range(t):
+            self.__iterate()
 
 if __name__ == '__main__':
 
