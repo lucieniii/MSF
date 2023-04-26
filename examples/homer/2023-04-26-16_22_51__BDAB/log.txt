@@ -1,0 +1,493 @@
+Loading mesh.
+19 vertices collapsed in 3 iterations.
+422 vertices added in 4 iterations.
+-------------------------------------
+Iteration 1:
+Constructing Laplace matrix.
+Solving linear system.
+lsqr status: 2 l2 norm: 21.74530654648547
+lsqr status: 2 l2 norm: 14.205560203074885
+lsqr status: 2 l2 norm: 23.485300730382562
+Perform Implicit Laplacian mesh smoothing.
+Optimizing mesh.
+1363 vertices collapsed in 19 iterations.
+2030 vertices added in 4 iterations.
+Trying to fix vertices.
+0 vertices fixed in this interation.
+0 of 7072 fixed in this iteration.
+-------------------------------------
+Iteration 2:
+Constructing Laplace matrix.
+Solving linear system.
+lsqr status: 2 l2 norm: 8.75707809210519
+lsqr status: 2 l2 norm: 6.0813514589501265
+lsqr status: 2 l2 norm: 9.271576029707019
+Perform Implicit Laplacian mesh smoothing.
+Optimizing mesh.
+3017 vertices collapsed in 18 iterations.
+1279 vertices added in 4 iterations.
+Trying to fix vertices.
+17 vertices fixed in this interation.
+17 of 5334 fixed in this iteration.
+-------------------------------------
+Iteration 3:
+Constructing Laplace matrix.
+Solving linear system.
+lsqr status: 1 l2 norm: 7.487593350415866
+lsqr status: 1 l2 norm: 5.505077903356648
+lsqr status: 1 l2 norm: 7.764134415060622
+Perform Implicit Laplacian mesh smoothing.
+Optimizing mesh.
+1828 vertices collapsed in 15 iterations.
+851 vertices added in 4 iterations.
+Trying to fix vertices.
+33 vertices fixed in this interation.
+50 of 4357 fixed in this iteration.
+-------------------------------------
+Iteration 4:
+Constructing Laplace matrix.
+Solving linear system.
+lsqr status: 2 l2 norm: 9.181373516391735
+lsqr status: 2 l2 norm: 6.815269671511156
+lsqr status: 2 l2 norm: 9.022234744271554
+Perform Implicit Laplacian mesh smoothing.
+Optimizing mesh.
+1240 vertices collapsed in 14 iterations.
+591 vertices added in 4 iterations.
+Trying to fix vertices.
+68 vertices fixed in this interation.
+118 of 3708 fixed in this iteration.
+-------------------------------------
+Iteration 5:
+Constructing Laplace matrix.
+Solving linear system.
+lsqr status: 2 l2 norm: 10.314966250556612
+lsqr status: 2 l2 norm: 7.137217543725672
+lsqr status: 2 l2 norm: 10.098259490004496
+Perform Implicit Laplacian mesh smoothing.
+Optimizing mesh.
+929 vertices collapsed in 12 iterations.
+536 vertices added in 4 iterations.
+Trying to fix vertices.
+75 vertices fixed in this interation.
+193 of 3315 fixed in this iteration.
+-------------------------------------
+Iteration 6:
+Constructing Laplace matrix.
+Solving linear system.
+lsqr status: 2 l2 norm: 10.888128459125426
+lsqr status: 2 l2 norm: 6.9865006983238365
+lsqr status: 2 l2 norm: 10.42378166901204
+Perform Implicit Laplacian mesh smoothing.
+Optimizing mesh.
+816 vertices collapsed in 10 iterations.
+508 vertices added in 4 iterations.
+Trying to fix vertices.
+83 vertices fixed in this interation.
+276 of 3007 fixed in this iteration.
+-------------------------------------
+Iteration 7:
+Constructing Laplace matrix.
+Solving linear system.
+lsqr status: 2 l2 norm: 11.545145203155414
+lsqr status: 2 l2 norm: 7.23828302782056
+lsqr status: 2 l2 norm: 11.052356390997751
+Perform Implicit Laplacian mesh smoothing.
+Optimizing mesh.
+690 vertices collapsed in 12 iterations.
+454 vertices added in 4 iterations.
+Trying to fix vertices.
+77 vertices fixed in this interation.
+353 of 2771 fixed in this iteration.
+-------------------------------------
+Iteration 8:
+Constructing Laplace matrix.
+Solving linear system.
+lsqr status: 2 l2 norm: 11.833300651750536
+lsqr status: 2 l2 norm: 7.651167186703613
+lsqr status: 2 l2 norm: 11.62791329885539
+Perform Implicit Laplacian mesh smoothing.
+Optimizing mesh.
+620 vertices collapsed in 14 iterations.
+398 vertices added in 4 iterations.
+Trying to fix vertices.
+97 vertices fixed in this interation.
+450 of 2549 fixed in this iteration.
+-------------------------------------
+Iteration 9:
+Constructing Laplace matrix.
+Solving linear system.
+lsqr status: 2 l2 norm: 11.08418808404044
+lsqr status: 2 l2 norm: 6.9037570380948505
+lsqr status: 2 l2 norm: 11.081972991293792
+Perform Implicit Laplacian mesh smoothing.
+Optimizing mesh.
+511 vertices collapsed in 9 iterations.
+369 vertices added in 4 iterations.
+Trying to fix vertices.
+95 vertices fixed in this interation.
+545 of 2407 fixed in this iteration.
+-------------------------------------
+Iteration 10:
+Constructing Laplace matrix.
+Solving linear system.
+lsqr status: 2 l2 norm: 10.944272865644905
+lsqr status: 2 l2 norm: 6.666302413043655
+lsqr status: 2 l2 norm: 11.045904188089704
+Perform Implicit Laplacian mesh smoothing.
+Optimizing mesh.
+469 vertices collapsed in 11 iterations.
+304 vertices added in 4 iterations.
+Trying to fix vertices.
+61 vertices fixed in this interation.
+606 of 2242 fixed in this iteration.
+-------------------------------------
+Iteration 11:
+Constructing Laplace matrix.
+Solving linear system.
+lsqr status: 2 l2 norm: 10.788927905591564
+lsqr status: 2 l2 norm: 6.532530248636962
+lsqr status: 2 l2 norm: 10.679505775158784
+Perform Implicit Laplacian mesh smoothing.
+Optimizing mesh.
+456 vertices collapsed in 11 iterations.
+291 vertices added in 3 iterations.
+Trying to fix vertices.
+44 vertices fixed in this interation.
+650 of 2077 fixed in this iteration.
+-------------------------------------
+Iteration 12:
+Constructing Laplace matrix.
+Solving linear system.
+lsqr status: 2 l2 norm: 10.037103215119693
+lsqr status: 2 l2 norm: 6.048743985327374
+lsqr status: 2 l2 norm: 9.86076589204815
+Perform Implicit Laplacian mesh smoothing.
+Optimizing mesh.
+432 vertices collapsed in 11 iterations.
+271 vertices added in 4 iterations.
+Trying to fix vertices.
+22 vertices fixed in this interation.
+672 of 1916 fixed in this iteration.
+-------------------------------------
+Iteration 13:
+Constructing Laplace matrix.
+Solving linear system.
+lsqr status: 2 l2 norm: 9.159905778241239
+lsqr status: 2 l2 norm: 5.847323375514948
+lsqr status: 2 l2 norm: 9.200537465194792
+Perform Implicit Laplacian mesh smoothing.
+Optimizing mesh.
+385 vertices collapsed in 12 iterations.
+220 vertices added in 4 iterations.
+Trying to fix vertices.
+25 vertices fixed in this interation.
+697 of 1751 fixed in this iteration.
+-------------------------------------
+Iteration 14:
+Constructing Laplace matrix.
+Solving linear system.
+lsqr status: 2 l2 norm: 9.389919193170948
+lsqr status: 1 l2 norm: 8.121909906186511
+lsqr status: 2 l2 norm: 9.791787048228523
+Perform Implicit Laplacian mesh smoothing.
+Optimizing mesh.
+303 vertices collapsed in 11 iterations.
+200 vertices added in 4 iterations.
+Trying to fix vertices.
+33 vertices fixed in this interation.
+730 of 1648 fixed in this iteration.
+-------------------------------------
+Iteration 15:
+Constructing Laplace matrix.
+Solving linear system.
+lsqr status: 2 l2 norm: 8.142603772194008
+lsqr status: 2 l2 norm: 4.930005599594901
+lsqr status: 2 l2 norm: 8.065134754580145
+Perform Implicit Laplacian mesh smoothing.
+Optimizing mesh.
+237 vertices collapsed in 12 iterations.
+187 vertices added in 4 iterations.
+Trying to fix vertices.
+52 vertices fixed in this interation.
+782 of 1598 fixed in this iteration.
+-------------------------------------
+Iteration 16:
+Constructing Laplace matrix.
+Solving linear system.
+lsqr status: 2 l2 norm: 7.6939804673852175
+lsqr status: 2 l2 norm: 4.776607083139485
+lsqr status: 2 l2 norm: 6.884661931722329
+Perform Implicit Laplacian mesh smoothing.
+Optimizing mesh.
+203 vertices collapsed in 9 iterations.
+160 vertices added in 4 iterations.
+Trying to fix vertices.
+40 vertices fixed in this interation.
+822 of 1555 fixed in this iteration.
+-------------------------------------
+Iteration 17:
+Constructing Laplace matrix.
+Solving linear system.
+lsqr status: 2 l2 norm: 7.410847590286862
+lsqr status: 2 l2 norm: 4.703259886550272
+lsqr status: 2 l2 norm: 6.343675222566486
+Perform Implicit Laplacian mesh smoothing.
+Optimizing mesh.
+171 vertices collapsed in 8 iterations.
+136 vertices added in 4 iterations.
+Trying to fix vertices.
+41 vertices fixed in this interation.
+863 of 1520 fixed in this iteration.
+-------------------------------------
+Iteration 18:
+Constructing Laplace matrix.
+Solving linear system.
+lsqr status: 2 l2 norm: 7.2033095824999815
+lsqr status: 2 l2 norm: 4.603605479499274
+lsqr status: 2 l2 norm: 6.004297907371976
+Perform Implicit Laplacian mesh smoothing.
+Optimizing mesh.
+151 vertices collapsed in 8 iterations.
+114 vertices added in 4 iterations.
+Trying to fix vertices.
+21 vertices fixed in this interation.
+884 of 1483 fixed in this iteration.
+-------------------------------------
+Iteration 19:
+Constructing Laplace matrix.
+Solving linear system.
+lsqr status: 2 l2 norm: 7.51239654105861
+lsqr status: 1 l2 norm: 7.676038183411149
+lsqr status: 1 l2 norm: 6.9959569164302335
+Perform Implicit Laplacian mesh smoothing.
+Optimizing mesh.
+122 vertices collapsed in 8 iterations.
+94 vertices added in 4 iterations.
+Trying to fix vertices.
+22 vertices fixed in this interation.
+906 of 1455 fixed in this iteration.
+-------------------------------------
+Iteration 20:
+Constructing Laplace matrix.
+Solving linear system.
+lsqr status: 2 l2 norm: 6.955082256853346
+lsqr status: 2 l2 norm: 4.427351774218958
+lsqr status: 2 l2 norm: 5.811435468341924
+Perform Implicit Laplacian mesh smoothing.
+Optimizing mesh.
+91 vertices collapsed in 6 iterations.
+83 vertices added in 4 iterations.
+Trying to fix vertices.
+18 vertices fixed in this interation.
+924 of 1447 fixed in this iteration.
+-------------------------------------
+Iteration 21:
+Constructing Laplace matrix.
+Solving linear system.
+lsqr status: 2 l2 norm: 6.7796874763798165
+lsqr status: 2 l2 norm: 4.304620140311938
+lsqr status: 2 l2 norm: 5.671783172153705
+Perform Implicit Laplacian mesh smoothing.
+Optimizing mesh.
+77 vertices collapsed in 6 iterations.
+61 vertices added in 3 iterations.
+Trying to fix vertices.
+18 vertices fixed in this interation.
+942 of 1431 fixed in this iteration.
+-------------------------------------
+Iteration 22:
+Constructing Laplace matrix.
+Solving linear system.
+lsqr status: 2 l2 norm: 6.755044438984422
+lsqr status: 2 l2 norm: 4.242079880213345
+lsqr status: 2 l2 norm: 5.4588813146034045
+Perform Implicit Laplacian mesh smoothing.
+Optimizing mesh.
+62 vertices collapsed in 7 iterations.
+65 vertices added in 4 iterations.
+Trying to fix vertices.
+14 vertices fixed in this interation.
+956 of 1434 fixed in this iteration.
+-------------------------------------
+Iteration 23:
+Constructing Laplace matrix.
+Solving linear system.
+lsqr status: 2 l2 norm: 6.665771825473816
+lsqr status: 2 l2 norm: 4.293526804046025
+lsqr status: 2 l2 norm: 5.346673659912971
+Perform Implicit Laplacian mesh smoothing.
+Optimizing mesh.
+62 vertices collapsed in 6 iterations.
+54 vertices added in 4 iterations.
+Trying to fix vertices.
+13 vertices fixed in this interation.
+969 of 1426 fixed in this iteration.
+-------------------------------------
+Iteration 24:
+Constructing Laplace matrix.
+Solving linear system.
+lsqr status: 2 l2 norm: 6.875846034223155
+lsqr status: 2 l2 norm: 4.621121917686539
+lsqr status: 2 l2 norm: 5.390380334856091
+Perform Implicit Laplacian mesh smoothing.
+Optimizing mesh.
+56 vertices collapsed in 6 iterations.
+56 vertices added in 3 iterations.
+Trying to fix vertices.
+10 vertices fixed in this interation.
+979 of 1426 fixed in this iteration.
+-------------------------------------
+Iteration 25:
+Constructing Laplace matrix.
+Solving linear system.
+lsqr status: 2 l2 norm: 6.590001846762312
+lsqr status: 2 l2 norm: 4.309625671406662
+lsqr status: 2 l2 norm: 5.081059144549793
+Perform Implicit Laplacian mesh smoothing.
+Optimizing mesh.
+58 vertices collapsed in 4 iterations.
+49 vertices added in 3 iterations.
+Trying to fix vertices.
+14 vertices fixed in this interation.
+993 of 1417 fixed in this iteration.
+-------------------------------------
+Iteration 26:
+Constructing Laplace matrix.
+Solving linear system.
+lsqr status: 2 l2 norm: 6.583513721046423
+lsqr status: 2 l2 norm: 4.426261668444292
+lsqr status: 2 l2 norm: 5.120035776359727
+Perform Implicit Laplacian mesh smoothing.
+Optimizing mesh.
+46 vertices collapsed in 6 iterations.
+36 vertices added in 4 iterations.
+Trying to fix vertices.
+9 vertices fixed in this interation.
+1002 of 1407 fixed in this iteration.
+-------------------------------------
+Iteration 27:
+Constructing Laplace matrix.
+Solving linear system.
+lsqr status: 2 l2 norm: 6.165167549474818
+lsqr status: 2 l2 norm: 3.9389571540364
+lsqr status: 2 l2 norm: 4.955238943284858
+Perform Implicit Laplacian mesh smoothing.
+Optimizing mesh.
+35 vertices collapsed in 5 iterations.
+36 vertices added in 4 iterations.
+Trying to fix vertices.
+9 vertices fixed in this interation.
+1011 of 1408 fixed in this iteration.
+-------------------------------------
+Iteration 28:
+Constructing Laplace matrix.
+Solving linear system.
+lsqr status: 2 l2 norm: 6.149097259582737
+lsqr status: 2 l2 norm: 3.895138717806575
+lsqr status: 2 l2 norm: 4.922717278555061
+Perform Implicit Laplacian mesh smoothing.
+Optimizing mesh.
+36 vertices collapsed in 5 iterations.
+31 vertices added in 4 iterations.
+Trying to fix vertices.
+7 vertices fixed in this interation.
+1018 of 1403 fixed in this iteration.
+-------------------------------------
+Iteration 29:
+Constructing Laplace matrix.
+Solving linear system.
+lsqr status: 2 l2 norm: 5.926052509938722
+lsqr status: 2 l2 norm: 3.6982295676916372
+lsqr status: 2 l2 norm: 4.851273837196489
+Perform Implicit Laplacian mesh smoothing.
+Optimizing mesh.
+32 vertices collapsed in 5 iterations.
+36 vertices added in 4 iterations.
+Trying to fix vertices.
+11 vertices fixed in this interation.
+1029 of 1407 fixed in this iteration.
+-------------------------------------
+Iteration 30:
+Constructing Laplace matrix.
+Solving linear system.
+lsqr status: 2 l2 norm: 5.769860252124159
+lsqr status: 2 l2 norm: 3.625879349152173
+lsqr status: 2 l2 norm: 4.650515608625971
+Perform Implicit Laplacian mesh smoothing.
+Optimizing mesh.
+27 vertices collapsed in 5 iterations.
+33 vertices added in 3 iterations.
+Trying to fix vertices.
+14 vertices fixed in this interation.
+1043 of 1413 fixed in this iteration.
+-------------------------------------
+Iteration 31:
+Constructing Laplace matrix.
+Solving linear system.
+lsqr status: 2 l2 norm: 5.6635208068467575
+lsqr status: 2 l2 norm: 3.506209664894481
+lsqr status: 2 l2 norm: 4.641110357604519
+Perform Implicit Laplacian mesh smoothing.
+Optimizing mesh.
+23 vertices collapsed in 3 iterations.
+26 vertices added in 3 iterations.
+Trying to fix vertices.
+15 vertices fixed in this interation.
+1058 of 1416 fixed in this iteration.
+-------------------------------------
+Iteration 32:
+Constructing Laplace matrix.
+Solving linear system.
+lsqr status: 2 l2 norm: 5.5982584046108785
+lsqr status: 2 l2 norm: 3.386339554885564
+lsqr status: 2 l2 norm: 4.635126758404088
+Perform Implicit Laplacian mesh smoothing.
+Optimizing mesh.
+21 vertices collapsed in 5 iterations.
+22 vertices added in 3 iterations.
+Trying to fix vertices.
+4 vertices fixed in this interation.
+1062 of 1417 fixed in this iteration.
+-------------------------------------
+Iteration 33:
+Constructing Laplace matrix.
+Solving linear system.
+lsqr status: 2 l2 norm: 5.624629422534028
+lsqr status: 2 l2 norm: 3.423815993899984
+lsqr status: 2 l2 norm: 4.6451418300231095
+Perform Implicit Laplacian mesh smoothing.
+Optimizing mesh.
+18 vertices collapsed in 3 iterations.
+19 vertices added in 3 iterations.
+Trying to fix vertices.
+0 vertices fixed in this interation.
+1062 of 1418 fixed in this iteration.
+-------------------------------------
+Iteration 34:
+Constructing Laplace matrix.
+Solving linear system.
+lsqr status: 2 l2 norm: 5.609816112871672
+lsqr status: 2 l2 norm: 3.4092926335156406
+lsqr status: 2 l2 norm: 4.647113668807142
+Perform Implicit Laplacian mesh smoothing.
+Optimizing mesh.
+19 vertices collapsed in 3 iterations.
+18 vertices added in 3 iterations.
+Trying to fix vertices.
+1 vertices fixed in this interation.
+1063 of 1417 fixed in this iteration.
+-------------------------------------
+Iteration 35:
+Constructing Laplace matrix.
+Solving linear system.
+lsqr status: 2 l2 norm: 5.57984977385067
+lsqr status: 2 l2 norm: 3.3680411726739425
+lsqr status: 2 l2 norm: 4.634090746936644
+Perform Implicit Laplacian mesh smoothing.
+Optimizing mesh.
+18 vertices collapsed in 3 iterations.
+19 vertices added in 3 iterations.
+Trying to fix vertices.
+2 vertices fixed in this interation.
+1065 of 1418 fixed in this iteration.

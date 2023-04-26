@@ -45,7 +45,7 @@ class Laplacian:
                 for i in range(3):
                     current_angle = angles[i]
                     v0_index, v1_index, v2_index = face[vertices_face_indexs[i]]
-                    delta = 1 / (area_list[v0_index] * np.tan(current_angle) + self.EPS)
+                    delta = 0.5 / (area_list[v0_index] * np.tan(current_angle) + self.EPS)
                     if not is_fixed[v1_index]:
                         laplace_dict[(v1_index, v1_index)] = laplace_dict.get((v1_index, v1_index), 0) - delta
                         laplace_dict[(v1_index, v2_index)] = laplace_dict.get((v1_index, v2_index), 0) + delta
@@ -148,11 +148,10 @@ class Laplacian:
         smooth_vertices = np.asarray(mesh.vertices)
         vn = smooth_vertices.shape[0]
 
-        # Compute Laplace-Beltrami matrix
-        csr_uL = self.generator(mesh, is_fixed)
-
         # Iterate to smooth the mesh.
-        for _ in tqdm(range(t), desc='Implicit Laplacian mesh smoothing'):
+        for _ in range(t):
+            # Compute Laplace-Beltrami matrix
+            csr_uL = self.generator(mesh, is_fixed)
             # Solve the linear system
             smooth_vertices = spsolve(identity(vn) - lam * csr_uL, smooth_vertices)
             smooth_mesh.vertices = smooth_vertices

@@ -84,6 +84,12 @@ class MeshSaver:
         else:
             write_trimesh(mesh, os.path.join(self.skeleton_path, file_name))
         self.skeleton_counter += 1
+    
+    def save_mash(self, mesh, path, colors=None):
+        if colors is not None:
+            write_trimesh_with_color(mesh, path, colors)
+        else:
+            write_trimesh(mesh, path)
 
 class Config:
 

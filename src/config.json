@@ -12,13 +12,14 @@
 
     "alpha": 110,
 
+    "use_Laplacian_smoothing": true,
     "smooth_lam":   0.01,
     "smooth_it":    1,
 
-    "use_reconstruction_in_voronoi": true,
-        "k": 200,
-
-    "Laplacian_type": "tangent",
+    "use_reconstruction_in_voronoi": false,
+    "k_voronoi": 200,
+    "use_reconstruction_in_skeletonization": false,
+    "k_skeleton": 400,
 
     "lsqr_args": {
         "damp": 0.0, 
