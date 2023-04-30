@@ -17,32 +17,32 @@ A realization of Mean Curvature Skeleton
 
 ## Examples
 
-| ![1](/Users/lucien/Github/UCL-APG-Project/examples/armadillo/2.png) | ![1](/Users/lucien/Github/UCL-APG-Project/examples/armadillo/1.png) | ![1](/Users/lucien/Github/UCL-APG-Project/examples/armadillo/3.png) |
-| ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
+| ![1](examples/armadillo/2.png) | ![1](examples/armadillo/1.png) | ![1](examples/armadillo/3.png) |
+| ------------------------------ | ------------------------------ | ------------------------------ |
 
-| ![2](/Users/lucien/Github/UCL-APG-Project/examples/armadillo2/2.png) | ![2](/Users/lucien/Github/UCL-APG-Project/examples/armadillo2/1.png) | ![2](/Users/lucien/Github/UCL-APG-Project/examples/armadillo2/3.png) |
-| ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
+| ![2](examples/armadillo2/2.png) | ![2](examples/armadillo2/1.png) | ![2](examples/armadillo2/3.png) |
+| ------------------------------- | ------------------------------- | ------------------------------- |
 
-| ![2](/Users/lucien/Github/UCL-APG-Project/examples/camel/2.png) | ![2](/Users/lucien/Github/UCL-APG-Project/examples/camel/1.png) | ![2](/Users/lucien/Github/UCL-APG-Project/examples/camel/3.png) |
-| ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
+| ![2](examples/camel/2.png) | ![2](examples/camel/1.png) | ![2](examples/camel/3.png) |
+| -------------------------- | -------------------------- | -------------------------- |
 
-| ![1](/Users/lucien/Github/UCL-APG-Project/examples/cheburashka/2.png) | ![1](/Users/lucien/Github/UCL-APG-Project/examples/cheburashka/1.png) | ![1](/Users/lucien/Github/UCL-APG-Project/examples/cheburashka/3.png) |
-| ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
+| ![1](examples/cheburashka/2.png) | ![1](examples/cheburashka/1.png) | ![1](examples/cheburashka/3.png) |
+| -------------------------------- | -------------------------------- | -------------------------------- |
 
-| ![1](/Users/lucien/Github/UCL-APG-Project/examples/cow/2.png) | ![1](/Users/lucien/Github/UCL-APG-Project/examples/cow/3.png) | ![1](/Users/lucien/Github/UCL-APG-Project/examples/cow/1.png) |
-| ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
+| ![1](examples/cow/2.png) | ![1](examples/cow/3.png) | ![1](examples/cow/1.png) |
+| ------------------------ | ------------------------ | ------------------------ |
 
-| ![1](/Users/lucien/Github/UCL-APG-Project/examples/homer/2.png) | ![1](/Users/lucien/Github/UCL-APG-Project/examples/homer/3.png) | ![1](/Users/lucien/Github/UCL-APG-Project/examples/homer/1.png) |
-| ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
+| ![1](examples/homer/2.png) | ![1](examples/homer/3.png) | ![1](examples/homer/1.png) |
+| -------------------------- | -------------------------- | -------------------------- |
 
-| ![3](/Users/lucien/Github/UCL-APG-Project/examples/horse/2.png) | ![3](/Users/lucien/Github/UCL-APG-Project/examples/horse/3.png) | ![3](/Users/lucien/Github/UCL-APG-Project/examples/horse/1.png) |
-| ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
+| ![3](examples/horse/2.png) | ![3](examples/horse/3.png) | ![3](examples/horse/1.png) |
+| -------------------------- | -------------------------- | -------------------------- |
 
-| ![3](/Users/lucien/Github/UCL-APG-Project/examples/indorelax/3.png) | ![3](/Users/lucien/Github/UCL-APG-Project/examples/indorelax/2.png) | ![3](/Users/lucien/Github/UCL-APG-Project/examples/indorelax/1.png) |
-| ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
+| ![3](examples/indorelax/3.png) | ![3](examples/indorelax/2.png) | ![3](examples/indorelax/1.png) |
+| ------------------------------ | ------------------------------ | ------------------------------ |
 
-| ![3](/Users/lucien/Github/UCL-APG-Project/examples/lucy/3.png) | ![3](/Users/lucien/Github/UCL-APG-Project/examples/lucy/2.png) | ![3](/Users/lucien/Github/UCL-APG-Project/examples/lucy/1.png) |
-| ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
+| ![3](examples/lucy/3.png) | ![3](examples/lucy/2.png) | ![3](examples/lucy/1.png) |
+| ------------------------- | ------------------------- | ------------------------- |
 
 ## How to use
 
