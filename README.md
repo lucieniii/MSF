@@ -1,8 +1,8 @@
 # MSF (Medial Skeletonization Flow)
 
-UCL COMP0119: Acquisition and Processing of 3D Geometry Project
-
 A realization of Mean Curvature Skeleton
+
+UCL COMP0119: Acquisition and Processing of 3D Geometry Project
 
 > **Reference:** Tagliasacchi, A., Alhashim, I., Olson, M. and Zhang, H. (2012), Mean Curvature Skeletons. Computer Graphics Forum, 31: 1735-1744. https://doi.org/10.1111/j.1467-8659.2012.03178.x
 
