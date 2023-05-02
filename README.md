@@ -60,7 +60,7 @@ msf = MSF()
 msf.load_mesh("../models/armadillo.obj")
 
 # Let's iterate! Of course you should repeate it.
-msf.iterate()
+msf.iterate() # msf.iterate(50) # or iterate 50 rounds directly
 
 # Then see the skeletons in the latest folder of the `result` folder.
 ```
